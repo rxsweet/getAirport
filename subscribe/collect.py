@@ -201,6 +201,7 @@ def assign(
 
 
 def aggregate(args: argparse.Namespace) -> None:
+
     def parse_gist_link(link: str) -> tuple[str, str]:
         # 提取 gist 用户名及 id
         words = utils.trim(link).split("/", maxsplit=1)
@@ -218,7 +219,8 @@ def aggregate(args: argparse.Namespace) -> None:
     username, gist_id = parse_gist_link(args.gist)
 
     tasks = assign(
-        bin_name=subconverter_bin,
+        #bin_name=subconverter_bin,
+        bin_name='asfasdfsad',
         domains_file="domains.txt",
         overwrite=args.overwrite,
         pages=args.pages,
