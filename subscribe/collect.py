@@ -3,16 +3,18 @@
 # @Author  : wzdnzd
 # @Time    : 2022-07-15
 
-import argparse
-import itertools
+#系统库文件
+import argparse                 #argparse是python用于解析命令行参数和选项的标准模块,https://www.cnblogs.com/software-develop/articles/18060482
+import itertools                #itertools是Python的一个内置模块，提供了一系列用于高效循环的迭代器函数,https://blog.csdn.net/xcntime/article/details/115675908
 import os
 import random
 import re
 import shutil
-import subprocess
+import subprocess               #subprocess模块是Python中用于创建和管理子进程的一个模块
 import sys
 import time
 
+#大佬编写的库文件
 import crawl
 import executable
 import push
@@ -24,12 +26,13 @@ from logger import logger
 from urlvalidator import isurl
 from workflow import TaskConfig
 
-import clash
-import subconverter
+#使用到的程序文件
+import clash                #测速程序
+import subconverter         #订阅转换程序
 
-PATH = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+PATH = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))  # 1.os.path.dirname(_file_) 返回脚本的绝对路径.. 2.可嵌套使用，如 os.path.dirname(os.path.dirname(path) ) 返回父路径的父路径,,https://blog.csdn.net/qq_43404784/article/details/88994350
 
-DATA_BASE = os.path.join(PATH, "data")
+DATA_BASE = os.path.join(PATH, "data")      #os.path.join()函数用于路径拼接文件路径,https://blog.csdn.net/swan777/article/details/89040802
 
 
 def assign(
@@ -207,7 +210,7 @@ def aggregate(args: argparse.Namespace) -> None:
 
         return utils.trim(words[0]), utils.trim(words[1])
 
-    clash_bin, subconverter_bin = executable.which_bin()
+    #clash_bin, subconverter_bin = executable.which_bin()    #选择clash和subconverter程序
     display = not args.invisible
 
     subscribes_file = "subscribes.txt"
@@ -237,7 +240,7 @@ def aggregate(args: argparse.Namespace) -> None:
 
     # 已有订阅已经做过过期检查，无需再测
     old_subscriptions = set([t.sub for t in tasks if t.sub])
-
+    """
     logger.info(f"start generate subscribes information, tasks: {len(tasks)}")
     generate_conf = os.path.join(PATH, "subconverter", "generate.ini")
     if os.path.exists(generate_conf) and os.path.isfile(generate_conf):
@@ -408,7 +411,7 @@ def aggregate(args: argparse.Namespace) -> None:
 
     # 清理工作空间
     workflow.cleanup(workspace, [])
-
+    """
 
 class CustomHelpFormatter(argparse.HelpFormatter):
     def _format_action_invocation(self, action):
@@ -431,7 +434,7 @@ class CustomHelpFormatter(argparse.HelpFormatter):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(formatter_class=CustomHelpFormatter)
+    parser = argparse.ArgumentParser(formatter_class=CustomHelpFormatter)           #
     parser.add_argument(
         "-a",
         "--all",
@@ -439,7 +442,7 @@ if __name__ == "__main__":
         action="store_true",
         default=False,
         help="generate full configuration for clash",
-    )
+    )#生成完整配置的clash
 
     parser.add_argument(
         "-c",
@@ -448,7 +451,7 @@ if __name__ == "__main__":
         action="store_true",
         default=False,
         help="discard candidate sites that may require human-authentication",
-    )
+    )#丢弃可能需要人工认证的候选站点
 
     parser.add_argument(
         "-d",
@@ -457,7 +460,7 @@ if __name__ == "__main__":
         required=False,
         default=5000,
         help="proxies max delay allowed",
-    )
+    )#代理允许的最大延迟
 
     parser.add_argument(
         "-e",
@@ -466,7 +469,7 @@ if __name__ == "__main__":
         action="store_true",
         default=False,
         help="try registering with a gmail alias when you encounter a whitelisted mailbox",
-    )
+    )#遇到白名单邮箱，尝试用 gmail 别名注册
 
     parser.add_argument(
         "-f",
@@ -475,7 +478,7 @@ if __name__ == "__main__":
         required=False,
         default=0,
         help="remaining traffic available for use, unit: GB",
-    )
+    )#剩余可使用流量，单位：GB
 
     parser.add_argument(
         "-g",
@@ -484,7 +487,7 @@ if __name__ == "__main__":
         required=False,
         default=os.environ.get("GIST_LINK", ""),
         help="github username and gist id, separated by '/'",
-    )
+    )#“github 用户名和 gist id，以 '/' 分隔”，
 
     parser.add_argument(
         "-i",
@@ -493,7 +496,7 @@ if __name__ == "__main__":
         action="store_true",
         default=False,
         help="don't show check progress bar",
-    )
+    )#“不显示检查进度条”
 
     parser.add_argument(
         "-k",
@@ -502,7 +505,7 @@ if __name__ == "__main__":
         required=False,
         default=os.environ.get("GIST_PAT", ""),
         help="github personal access token for editing gist",
-    )
+    )#“用于编辑要点的 GitHub 个人访问令牌”，
 
     parser.add_argument(
         "-l",
@@ -511,7 +514,7 @@ if __name__ == "__main__":
         required=False,
         default=0,
         help="remaining life time, unit: hours",
-    )
+    )#“剩余续航时间，单位：小时”
 
     parser.add_argument(
         "-n",
@@ -520,7 +523,7 @@ if __name__ == "__main__":
         required=False,
         default=64,
         help="threads num for check proxy",
-    )
+    )#“检查代理的线程数”，
 
     parser.add_argument(
         "-o",
@@ -529,7 +532,7 @@ if __name__ == "__main__":
         action="store_true",
         default=False,
         help="overwrite domains",
-    )
+    )#覆盖域名
 
     parser.add_argument(
         "-p",
@@ -538,7 +541,7 @@ if __name__ == "__main__":
         required=False,
         default=sys.maxsize,
         help="max page number when crawling telegram",
-    )
+    )#抓取电报时的 ax 页码
 
     parser.add_argument(
         "-r",
@@ -547,7 +550,7 @@ if __name__ == "__main__":
         action="store_true",
         default=False,
         help="refresh and remove expired proxies with existing subscriptions",
-    )
+    )#使用现有订阅刷新并删除过期的代理
 
     parser.add_argument(
         "-s",
@@ -556,7 +559,7 @@ if __name__ == "__main__":
         action="store_true",
         default=False,
         help="skip usability checks",
-    )
+    )#跳过可用性检查
 
     parser.add_argument(
         "-t",
@@ -565,7 +568,7 @@ if __name__ == "__main__":
         choices=subconverter.CONVERT_TARGETS,
         default=["clash", "v2ray", "singbox"],
         help=f"choose one or more generated profile type. default to clash, v2ray and singbox. supported: {subconverter.CONVERT_TARGETS}",
-    )
+    )#f“选择一个或多个生成的配置文件类型。默认为 clash、v2ray 和 singbox。支持：{subconverter.CONVERT_TARGETS}”，
 
     parser.add_argument(
         "-u",
@@ -574,7 +577,7 @@ if __name__ == "__main__":
         required=False,
         default="https://www.google.com/generate_204",
         help="test url",
-    )
+    )#"test url",
 
     parser.add_argument(
         "-v",
@@ -583,7 +586,7 @@ if __name__ == "__main__":
         action="store_true",
         default=False,
         help="ignoring default proxies filter rules",
-    )
+    )#“忽略默认代理过滤规则”，
 
     parser.add_argument(
         "-y",
@@ -592,6 +595,6 @@ if __name__ == "__main__":
         required=False,
         default=os.environ.get("CUSTOMIZE_LINK", ""),
         help="the url to the list of airports that you maintain yourself",
-    )
+    )#“您自己维护的机场列表的网址”，
 
     aggregate(args=parser.parse_args())
