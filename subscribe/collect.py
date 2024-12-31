@@ -541,7 +541,8 @@ if __name__ == "__main__":
         "--pages",
         type=int,
         required=False,
-        default=sys.maxsize,
+        #default=sys.maxsize,
+        default=20,
         help="max page number when crawling telegram",
     )#抓取电报时的 ax 页码
 
