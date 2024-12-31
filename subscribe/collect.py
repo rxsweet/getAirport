@@ -541,7 +541,7 @@ if __name__ == "__main__":
         type=int,
         required=False,
         #default=sys.maxsize,
-        default=50,
+        default=20,
         help="max page number when crawling telegram",
     )#抓取电报时的 ax 页码
 
@@ -559,7 +559,8 @@ if __name__ == "__main__":
         "--skip",
         dest="skip",
         action="store_true",
-        default=False,
+        #default=False,
+        default=True,
         help="skip usability checks",
     )#跳过可用性检查
 
