@@ -1,1 +1,8 @@
-
+http://8.129.23.122/api/v1/client/subscribe?token=82fabf9fd9f823875daee55e583add99
+https://dy.hy2.one/api/v1/client/subscribe?token=20047a6a66b8e3adad68eafd4ff95486
+http://8.129.23.122/api/v1/client/subscribe?token=bc994615c2e7b6b59f8fd076ff63d8d7
+https://console.veseai.com/api/v1/client/subscribe?token=f148d2c760a4b407161804ae0c2d01b4
+https://ch.owokkvsxks.store/api/v1/client/subscribe?token=4bd8081d236a46fd57fed39987b63848
+https://www.kuaidog010.top/api/v1/client/subscribe?token=429b7eb789306f56c4620e8f764eaff8
+https://sub.tiktijy.com/api/v1/client/subscribe?token=513def8f67a6ad81c38f48e470fe6ea7
+https://dy.sulian.life/api/v1/client/subscribe?token=8774a82ad33ee1016d3175c5afb792c1
