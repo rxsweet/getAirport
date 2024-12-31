@@ -211,10 +211,11 @@ def aggregate(args: argparse.Namespace) -> None:
 
         return utils.trim(words[0]), utils.trim(words[1])
 
-    clash_bin, subconverter_bin = executable.which_bin()    #选择clash和subconverter程序
-    print('clash_bin = ' + str(clash_bin))
-    print('subconverter_bin = ' + str(subconverter_bin))
-    return
+    #clash_bin, subconverter_bin = executable.which_bin()    #选择clash和subconverter程序
+    clash_bin = 'clash-linux-amd'
+    subconverter_bin = 'subconverter-linux-amd'
+
+
     display = not args.invisible
 
     subscribes_file = "subscribes.txt"
