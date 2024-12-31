@@ -915,3 +915,23 @@
 2024-12-31 16:23:48 workflow.py [line:138] INFO: finished fetch proxy: name=[jmJ3Ehwy]	id=[1]	domain=[https://sub.tiktijy.com]	count=[111]
 2024-12-31 16:23:48 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [executewrapper] finished, count: 6, cost: 1.72s
 2024-12-31 16:23:48 collect.py [line:359] INFO: found 194 proxies, save it to ['/home/runner/work/getAirport/getAirport/data/v2ray.txt']
+2024-12-31 16:33:10 collect.py [line:209] ERROR: cannot extract username and gist id due to invalid github gist link
+2024-12-31 16:33:10 collect.py [line:71] INFO: start checking whether existing subscriptions have expired
+2024-12-31 16:33:13 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [check_status] finished, count: 6, cost: 3.35s
+2024-12-31 16:33:13 collect.py [line:113] INFO: load exists subscription finished, count: 6
+2024-12-31 16:33:13 collect.py [line:130] INFO: skip registering new accounts, will use existing subscriptions for refreshing
+2024-12-31 16:33:13 collect.py [line:245] INFO: start generate subscribes information, tasks: 6
+2024-12-31 16:33:13 workflow.py [line:105] INFO: start fetch proxy: name=[Y0Go864V]	id=[1]	domain=[https://console.veseai.com]
+2024-12-31 16:33:13 workflow.py [line:105] INFO: start fetch proxy: name=[oCe9hISt]	id=[1]	domain=[https://ch.owokkvsxks.store]
+2024-12-31 16:33:13 workflow.py [line:105] INFO: start fetch proxy: name=[adfbztFo]	id=[1]	domain=[http://8.129.23.122]
+2024-12-31 16:33:13 workflow.py [line:105] INFO: start fetch proxy: name=[nipFlyvZ]	id=[1]	domain=[https://www.kuaidog010.top]
+2024-12-31 16:33:13 workflow.py [line:105] INFO: start fetch proxy: name=[K3mv0TBE]	id=[1]	domain=[https://sub.tiktijy.com]
+2024-12-31 16:33:13 workflow.py [line:105] INFO: start fetch proxy: name=[Uj8W0kB9]	id=[1]	domain=[http://8.129.23.122]
+2024-12-31 16:33:14 workflow.py [line:138] INFO: finished fetch proxy: name=[nipFlyvZ]	id=[1]	domain=[https://www.kuaidog010.top]	count=[13]
+2024-12-31 16:33:14 workflow.py [line:138] INFO: finished fetch proxy: name=[oCe9hISt]	id=[1]	domain=[https://ch.owokkvsxks.store]	count=[60]
+2024-12-31 16:33:15 workflow.py [line:138] INFO: finished fetch proxy: name=[Y0Go864V]	id=[1]	domain=[https://console.veseai.com]	count=[12]
+2024-12-31 16:33:15 workflow.py [line:138] INFO: finished fetch proxy: name=[Uj8W0kB9]	id=[1]	domain=[http://8.129.23.122]	count=[4]
+2024-12-31 16:33:15 workflow.py [line:138] INFO: finished fetch proxy: name=[K3mv0TBE]	id=[1]	domain=[https://sub.tiktijy.com]	count=[111]
+2024-12-31 16:33:16 workflow.py [line:138] INFO: finished fetch proxy: name=[adfbztFo]	id=[1]	domain=[http://8.129.23.122]	count=[4]
+2024-12-31 16:33:16 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [executewrapper] finished, count: 6, cost: 2.65s
+2024-12-31 16:33:16 collect.py [line:359] INFO: found 194 proxies, save it to ['/home/runner/work/getAirport/getAirport/data/v2ray.txt']
