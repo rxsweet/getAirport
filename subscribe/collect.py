@@ -219,8 +219,7 @@ def aggregate(args: argparse.Namespace) -> None:
     username, gist_id = parse_gist_link(args.gist)
 
     tasks = assign(
-        #bin_name=subconverter_bin,
-        bin_name='asfasdfsad',
+        bin_name=subconverter_bin,
         domains_file="domains.txt",
         overwrite=args.overwrite,
         pages=args.pages,
@@ -242,7 +241,7 @@ def aggregate(args: argparse.Namespace) -> None:
 
     # 已有订阅已经做过过期检查，无需再测
     old_subscriptions = set([t.sub for t in tasks if t.sub])
-    """
+    
     logger.info(f"start generate subscribes information, tasks: {len(tasks)}")
     generate_conf = os.path.join(PATH, "subconverter", "generate.ini")
     if os.path.exists(generate_conf) and os.path.isfile(generate_conf):
@@ -413,7 +412,7 @@ def aggregate(args: argparse.Namespace) -> None:
 
     # 清理工作空间
     workflow.cleanup(workspace, [])
-    """
+
 
 class CustomHelpFormatter(argparse.HelpFormatter):
     def _format_action_invocation(self, action):
