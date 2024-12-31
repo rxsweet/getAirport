@@ -935,3 +935,421 @@
 2024-12-31 16:33:16 workflow.py [line:138] INFO: finished fetch proxy: name=[adfbztFo]	id=[1]	domain=[http://8.129.23.122]	count=[4]
 2024-12-31 16:33:16 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [executewrapper] finished, count: 6, cost: 2.65s
 2024-12-31 16:33:16 collect.py [line:359] INFO: found 194 proxies, save it to ['/home/runner/work/getAirport/getAirport/data/v2ray.txt']
+2024-12-31 16:38:32 collect.py [line:209] ERROR: cannot extract username and gist id due to invalid github gist link
+2024-12-31 16:38:32 collect.py [line:71] INFO: start checking whether existing subscriptions have expired
+2024-12-31 16:38:34 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [check_status] finished, count: 6, cost: 1.82s
+2024-12-31 16:38:34 collect.py [line:113] INFO: load exists subscription finished, count: 6
+2024-12-31 16:38:35 crawl.py [line:1430] INFO: [TelegramCrawl] starting crawl from telegram, channel: jichang_list, pages: 30
+2024-12-31 16:38:35 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3941
+2024-12-31 16:38:35 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3921
+2024-12-31 16:38:35 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3901
+2024-12-31 16:38:35 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3881
+2024-12-31 16:38:35 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3861
+2024-12-31 16:38:35 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3841
+2024-12-31 16:38:35 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3821
+2024-12-31 16:38:35 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3801
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3781
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3761
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3741
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3721
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3701
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3681
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3661
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3641
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3621
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3601
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3581
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3561
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3541
+2024-12-31 16:38:36 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3521
+2024-12-31 16:38:37 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3501
+2024-12-31 16:38:37 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3481
+2024-12-31 16:38:37 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3461
+2024-12-31 16:38:37 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3441
+2024-12-31 16:38:37 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3421
+2024-12-31 16:38:37 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3401
+2024-12-31 16:38:37 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3381
+2024-12-31 16:38:37 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3361
+2024-12-31 16:38:38 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [extract_airport_site] finished, count: 30, cost: 3.30s
+2024-12-31 16:38:46 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [get_redirect_url] finished, count: 13, cost: 7.45s
+2024-12-31 16:38:50 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [run_crawl] finished, count: 9, cost: 0.23s
+2024-12-31 16:38:50 crawl.py [line:1731] INFO: [AirPortCollector] fetched 827 airport, start extracting real routing addresses
+2024-12-31 16:40:04 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [extract_backend_url] finished, count: 827, cost: 74.36s
+2024-12-31 16:40:04 crawl.py [line:1743] INFO: [AirPortCollector] extract real base url finished, start to check it now
+2024-12-31 16:40:50 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [validate_domain] finished, count: 610, cost: 45.25s
+2024-12-31 16:40:50 crawl.py [line:1755] INFO: [AirPortCollector] finished collect airport, availables: 90
+2024-12-31 16:40:50 collect.py [line:245] INFO: start generate subscribes information, tasks: 96
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[TAx4ka3e]	id=[1]	domain=[https://console.veseai.com]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[hvyJjQWZ]	id=[1]	domain=[http://8.129.23.122]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[N7vFurqJ]	id=[1]	domain=[https://ch.owokkvsxks.store]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[xzr9VOua]	id=[1]	domain=[https://www.kuaidog010.top]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[GbZYUBSc]	id=[1]	domain=[http://8.129.23.122]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[wDqHF8kA]	id=[1]	domain=[https://sub.tiktijy.com]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[changyouvpntop-liycd]	id=[1]	domain=[https://changyouvpn.top]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[kuailejcxyz-dtyq0]	id=[1]	domain=[https://kuailejc.xyz]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[w02qytl2web01cc-j07p]	id=[1]	domain=[https://w02.qytl2web01.cc]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[airaptliveorg-jnzv]	id=[1]	domain=[https://air.aptlive.org]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[qingyunticc-phe]	id=[1]	domain=[http://qingyunti.cc]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[superquicklinkapptop-g1ul]	id=[1]	domain=[https://super.quicklinkapp.top]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[appgomeowcloud-3qobx]	id=[1]	domain=[https://app.gomeow.cloud]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[sanqianlijinxiuheshanuskg-8n4]	id=[1]	domain=[https://sanqianlijinxiuheshan.us.kg]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[nexxuskg-wnq]	id=[1]	domain=[https://nexx.us.kg]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[vvclouduskg-cz2]	id=[1]	domain=[https://vvcloud.us.kg]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[kaikaixinxinme-dypq]	id=[1]	domain=[https://kaikaixinxin.me]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[yunluvip-2ac4]	id=[1]	domain=[https://yunlu.vip]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[zoumaguanhuaxyz-x1da3]	id=[1]	domain=[https://zouma.guanhua.xyz]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[dashminizzonline-8b1o7]	id=[1]	domain=[https://dash.minizz.online]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[wwwhj521top-odhm]	id=[1]	domain=[https://www.hj521.top]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[wwwhj522top-k34f]	id=[1]	domain=[https://www.hj522.top]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[kaolacloudsite-nv7r]	id=[1]	domain=[https://kaolacloud.site]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[consoleveseaicom-in06]	id=[1]	domain=[https://console.veseai.com]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[superbiucom-b1re9]	id=[1]	domain=[https://superbiu.com]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[abcnoseiseicom-nfis]	id=[1]	domain=[https://abc.noseisei.com]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[mypianyiinfo-32fr]	id=[1]	domain=[https://my.pianyi.info]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[xyznoseiseicom-l0fh4]	id=[1]	domain=[https://xyz.noseisei.com]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[zxcnoseiseicom-8qe]	id=[1]	domain=[https://zxc.noseisei.com]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[ayousucc-wb2gu]	id=[1]	domain=[https://a.yousu.cc]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[bailiansite-9c5i]	id=[1]	domain=[https://bailian.site]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[vyyidsdufcom-dag]	id=[1]	domain=[http://vyy.idsduf.com]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[dggidsdufcom-i4jvc]	id=[1]	domain=[https://dgg.idsduf.com]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[cyousucc-xbvs]	id=[1]	domain=[https://c.yousu.cc]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[byousucc-0zr8b]	id=[1]	domain=[https://b.yousu.cc]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[xmfwwwcc-smt]	id=[1]	domain=[https://xmfwww.cc]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[wwwxbyunlive-p8zo]	id=[1]	domain=[https://www.xbyun.live]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[xbfeiyimom-7rq]	id=[1]	domain=[https://xb.feiyi.mom]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[wwwsmcowcom-c5y]	id=[1]	domain=[https://www.smcow.com]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[chlouwangzhiyuxyz-28e]	id=[1]	domain=[https://ch.louwangzhiyu.xyz]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[thecomtoday-wmjt]	id=[1]	domain=[https://thecom.today]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[applegethcc-2lzey]	id=[1]	domain=[https://app.legeth.cc]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[a123buzz-h86n]	id=[1]	domain=[https://a123.buzz]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[panelmokupro-tpx2]	id=[1]	domain=[https://panel.moku.pro]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[aikxme-e73]	id=[1]	domain=[https://aikx.me]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[zzzyouxuanwiki-a7h]	id=[1]	domain=[https://zzz.youxuan.wiki]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[aaik88top-14s]	id=[1]	domain=[https://a.aik88.top]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[mapleicu-a0qb6]	id=[1]	domain=[https://maple.icu]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[1vyunyuntop-um2]	id=[1]	domain=[https://1.vyunyun.top]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[dddddsite-3nu]	id=[1]	domain=[https://ddddd.site]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[fdgdr0dg3xbvpnvip-r4zm]	id=[1]	domain=[https://fdgdr0dg3.xbvpn.vip]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[pkqxlmplus-fzdq2]	id=[1]	domain=[https://pkq.xlm.plus]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[zqjcorg-bncv]	id=[1]	domain=[https://zqjc.org]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[zhenshihuishop-snxk3]	id=[1]	domain=[https://zhenshihui.shop]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[zhenshihuilife-0nrs]	id=[1]	domain=[https://zhenshihui.life]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[xx-aiio-0rq3j]	id=[1]	domain=[https://xx-ai.io]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[wwwaaaspeedcc-5buan]	id=[1]	domain=[https://www.aaaspeed.cc]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[sq9xy6cpminigcom-wb2]	id=[1]	domain=[https://sq9xy6.cpminig.com]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[vpnsudatechstore-5s9v]	id=[1]	domain=[https://vpn.sudatech.store]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[1runvip-sn7]	id=[1]	domain=[http://1run.vip]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[abyssvpncom-vd7c]	id=[1]	domain=[https://abyssvpn.com]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[appcloudlionme-5rq]	id=[1]	domain=[https://app.cloudlion.me]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[wwwsusucloudnet-i0sv]	id=[1]	domain=[https://www.susucloud.net]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[apihpyjctop-h3ml]	id=[1]	domain=[http://api.hpyjc.top]
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://www.xbyun.live
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://www.xbyun.live
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[wwwxbyunlive-p8zo]	id=[1]	domain=[https://www.xbyun.live]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[hpyjctop-dw2]	id=[1]	domain=[http://hpyjc.top]
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://dash.minizz.online
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://dash.minizz.online
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[dashminizzonline-8b1o7]	id=[1]	domain=[https://dash.minizz.online]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[hy-2com-aorqy]	id=[1]	domain=[https://hy-2.com]
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://kaikaixinxin.me
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://kaikaixinxin.me
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[kaikaixinxinme-dypq]	id=[1]	domain=[https://kaikaixinxin.me]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[zhuiyuntop-m5hgv]	id=[1]	domain=[https://zhuiyun.top]
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://my.pianyi.info
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://my.pianyi.info
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[mypianyiinfo-32fr]	id=[1]	domain=[https://my.pianyi.info]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[bxiaowcc-otk7a]	id=[1]	domain=[https://b.xiaow.cc]
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://vvcloud.us.kg
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://vvcloud.us.kg
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[vvclouduskg-cz2]	id=[1]	domain=[https://vvcloud.us.kg]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[sulinkpro-ygj60]	id=[1]	domain=[https://sulink.pro]
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://yunlu.vip
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://yunlu.vip
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[yunluvip-2ac4]	id=[1]	domain=[https://yunlu.vip]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[arisakaio-k4i]	id=[1]	domain=[https://arisaka.io]
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://kaolacloud.site
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://kaolacloud.site
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[kaolacloudsite-nv7r]	id=[1]	domain=[https://kaolacloud.site]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[wwwmangsheorg-w5b]	id=[1]	domain=[https://www.mangshe.org]
+2024-12-31 16:40:50 airport.py [line:361] INFO: not exists free plan, domain: https://bailian.site
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://app.cloudlion.me
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://app.cloudlion.me
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[appcloudlionme-5rq]	id=[1]	domain=[https://app.cloudlion.me]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[dbshellnetnet-uxgs]	id=[1]	domain=[https://db.shellnet.net]
+2024-12-31 16:40:50 airport.py [line:361] INFO: not exists free plan, domain: https://1.vyunyun.top
+2024-12-31 16:40:50 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://sub.bailian.site/api/v1/client/subscribe?token=f25***835
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[bailiansite-9c5i]	id=[1]	domain=[https://bailian.site]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[wwweyujichangcom-uq0]	id=[1]	domain=[https://www.eyujichang.com]
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://nexx.us.kg
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://nexx.us.kg
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[nexxuskg-wnq]	id=[1]	domain=[https://nexx.us.kg]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[jisovpnsite-eqioj]	id=[1]	domain=[https://jisovpn.site]
+2024-12-31 16:40:50 airport.py [line:361] INFO: not exists free plan, domain: https://aikx.me
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://app.legeth.cc
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://app.legeth.cc
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[applegethcc-2lzey]	id=[1]	domain=[https://app.legeth.cc]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[niercloudcom-bx1]	id=[1]	domain=[https://niercloud.com]
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[xzr9VOua]	id=[1]	domain=[https://www.kuaidog010.top]	count=[13]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[fpacecloudcom-f6ok5]	id=[1]	domain=[https://fpacecloud.com]
+2024-12-31 16:40:50 airport.py [line:364] INFO: found free plan, domain: https://vpn.sudatech.store, plan: Plan(plan_id=25, package='onetime_price', renew=True, reset=False, trafficflow=1)
+2024-12-31 16:40:50 airport.py [line:364] INFO: found free plan, domain: https://sq9xy6.cpminig.com, plan: Plan(plan_id=25, package='onetime_price', renew=True, reset=False, trafficflow=1)
+2024-12-31 16:40:50 airport.py [line:361] INFO: not exists free plan, domain: https://thecom.today
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://jisovpn.site
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://jisovpn.site
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[jisovpnsite-eqioj]	id=[1]	domain=[https://jisovpn.site]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[qingyunzybseuorg-z9c]	id=[1]	domain=[https://qingyun.zybs.eu.org]
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://xb.feiyi.mom
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://xb.feiyi.mom
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[xbfeiyimom-7rq]	id=[1]	domain=[https://xb.feiyi.mom]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[xbjpopvip-6vb]	id=[1]	domain=[https://xb.jpop.vip]
+2024-12-31 16:40:50 airport.py [line:361] INFO: not exists free plan, domain: https://zzz.youxuan.wiki
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: http://api.hpyjc.top
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: http://api.hpyjc.top
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[apihpyjctop-h3ml]	id=[1]	domain=[http://api.hpyjc.top]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[mycatfakacom-7rhi]	id=[1]	domain=[https://my.catfaka.com]
+2024-12-31 16:40:50 renewal.py [line:271] ERROR: [CheckError] URL: a.aik88.top
+2024-12-31 16:40:50 airport.py [line:361] INFO: not exists free plan, domain: https://a.aik88.top
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: http://hpyjc.top
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: http://hpyjc.top
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[hpyjctop-dw2]	id=[1]	domain=[http://hpyjc.top]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[wwwxfxssrcom-6x47]	id=[1]	domain=[https://www.xfxssr.com]
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://changyouvpn.top
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://changyouvpn.top
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[changyouvpntop-liycd]	id=[1]	domain=[https://changyouvpn.top]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[iii1catymoe-6pg]	id=[1]	domain=[https://iii1.caty.moe]
+2024-12-31 16:40:50 airport.py [line:361] INFO: not exists free plan, domain: https://www.aaaspeed.cc
+2024-12-31 16:40:50 airport.py [line:276] INFO: achieved max retry when register, domain: https://kuailejc.xyz
+2024-12-31 16:40:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://kuailejc.xyz
+2024-12-31 16:40:50 workflow.py [line:138] INFO: finished fetch proxy: name=[kuailejcxyz-dtyq0]	id=[1]	domain=[https://kuailejc.xyz]	count=[0]
+2024-12-31 16:40:50 workflow.py [line:105] INFO: start fetch proxy: name=[wwwchaoyueshop-idx]	id=[1]	domain=[https://www.chaoyue.shop]
+2024-12-31 16:40:50 airport.py [line:361] INFO: not exists free plan, domain: https://abyssvpn.com
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://app.gomeow.cloud
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://app.gomeow.cloud
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[appgomeowcloud-3qobx]	id=[1]	domain=[https://app.gomeow.cloud]	count=[0]
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[snanguacom-o5bny]	id=[1]	domain=[https://snangua.com]
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[TAx4ka3e]	id=[1]	domain=[https://console.veseai.com]	count=[12]
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[gladosspace-vnt]	id=[1]	domain=[https://glados.space]
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://ddddd.site
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://ddddd.site
+2024-12-31 16:40:51 airport.py [line:361] INFO: not exists free plan, domain: https://zqjc.org
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[dddddsite-3nu]	id=[1]	domain=[https://ddddd.site]	count=[0]
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[panelkeleofficialcom-njco]	id=[1]	domain=[https://panel.keleofficial.com]
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://super.quicklinkapp.top
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://super.quicklinkapp.top
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[superquicklinkapptop-g1ul]	id=[1]	domain=[https://super.quicklinkapp.top]	count=[0]
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[qytvipaffcc04qytvipaffpro-w7x3]	id=[1]	domain=[https://qytvipaffcc04.qytvipaff.pro]
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://zhenshihui.shop
+2024-12-31 16:40:51 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://thecom.today/api/v1/client/subscribe?token=b53***81b
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://zhenshihui.shop
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[zhenshihuishop-snxk3]	id=[1]	domain=[https://zhenshihui.shop]	count=[0]
+2024-12-31 16:40:51 airport.py [line:361] INFO: not exists free plan, domain: https://www.mangshe.org
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[thecomtoday-wmjt]	id=[1]	domain=[https://thecom.today]	count=[0]
+2024-12-31 16:40:51 airport.py [line:394] INFO: [RegisterSuccess] register successed, domain: https://vpn.sudatech.store
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[fengwopro-2hxno]	id=[1]	domain=[https://fengwo.pro]
+2024-12-31 16:40:51 airport.py [line:361] INFO: not exists free plan, domain: https://hy-2.com
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[akpyunlive-zb4x]	id=[1]	domain=[https://a.kpyun.live]
+2024-12-31 16:40:51 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://b.aikllc.tech/api/v1/client/subscribe?token=1fe***03a
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://a123.buzz
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[N7vFurqJ]	id=[1]	domain=[https://ch.owokkvsxks.store]	count=[60]
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[aikxme-e73]	id=[1]	domain=[https://aikx.me]	count=[0]
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://a123.buzz
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[a123buzz-h86n]	id=[1]	domain=[https://a123.buzz]	count=[0]
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[语club-ycj]	id=[1]	domain=[https://语.club]
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[themeservercutecloudonede-rts]	id=[1]	domain=[https://themeserver.cutecloudone.de]
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[appcloudogme-o68]	id=[1]	domain=[https://app.cloudog.me]
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://snangua.com
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://snangua.com
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[snanguacom-o5bny]	id=[1]	domain=[https://snangua.com]	count=[0]
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[便宜机场co-8br0]	id=[1]	domain=[https://便宜机场.co]
+2024-12-31 16:40:51 airport.py [line:361] INFO: not exists free plan, domain: https://w02.qytl2web01.cc
+2024-12-31 16:40:51 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://www.aaaspeed.cc/api/v1/client/subscribe?token=697***61c
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[wwwaaaspeedcc-5buan]	id=[1]	domain=[https://www.aaaspeed.cc]	count=[0]
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[www2345养老机场com-a6i89]	id=[1]	domain=[https://www2345.养老机场.com]
+2024-12-31 16:40:51 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://qxuig4.youxuan.wiki/api/v1/client/subscribe?token=4dc***a53
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[zzzyouxuanwiki-a7h]	id=[1]	domain=[https://zzz.youxuan.wiki]	count=[0]
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[wwwkuaidog010top-uia]	id=[1]	domain=[https://www.kuaidog010.top]
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://www.xfxssr.com
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://www.xfxssr.com
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[wwwxfxssrcom-6x47]	id=[1]	domain=[https://www.xfxssr.com]	count=[0]
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[wwwkuaidog006top-bk9p0]	id=[1]	domain=[https://www.kuaidog006.top]
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://zhenshihui.life
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://zhenshihui.life
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[zhenshihuilife-0nrs]	id=[1]	domain=[https://zhenshihui.life]	count=[0]
+2024-12-31 16:40:51 workflow.py [line:105] INFO: start fetch proxy: name=[xn--wtq35pfyd55oco-mu4]	id=[1]	domain=[https://xn--wtq35pfyd55o.co]
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://arisaka.io
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://arisaka.io
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[arisakaio-k4i]	id=[1]	domain=[https://arisaka.io]	count=[0]
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://fdgdr0dg3.xbvpn.vip
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://fdgdr0dg3.xbvpn.vip
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[fdgdr0dg3xbvpnvip-r4zm]	id=[1]	domain=[https://fdgdr0dg3.xbvpn.vip]	count=[0]
+2024-12-31 16:40:51 airport.py [line:361] INFO: not exists free plan, domain: https://sanqianlijinxiuheshan.us.kg
+2024-12-31 16:40:51 renewal.py [line:456] ERROR: fetch free plans error, cookies and authorization is empty, domain: https://glados.space
+2024-12-31 16:40:51 airport.py [line:361] INFO: not exists free plan, domain: https://glados.space
+2024-12-31 16:40:51 renewal.py [line:554] ERROR: query subscribe information error, cookies and authorization is empty, domain: https://glados.space
+2024-12-31 16:40:51 airport.py [line:335] ERROR: [RegisterError] cannot get token when register, domain: https://glados.space
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://glados.space
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[gladosspace-vnt]	id=[1]	domain=[https://glados.space]	count=[0]
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://app.cloudog.me
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://app.cloudog.me
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[appcloudogme-o68]	id=[1]	domain=[https://app.cloudog.me]	count=[0]
+2024-12-31 16:40:51 airport.py [line:364] INFO: found free plan, domain: https://ch.louwangzhiyu.xyz, plan: Plan(plan_id=19, package='month_price', renew=True, reset=False, trafficflow=1000)
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://www2345.养老机场.com
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://www2345.养老机场.com
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[www2345养老机场com-a6i89]	id=[1]	domain=[https://www2345.养老机场.com]	count=[0]
+2024-12-31 16:40:51 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://a.aikllc.tech/api/v1/client/subscribe?token=8fc***107
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[aaik88top-14s]	id=[1]	domain=[https://a.aik88.top]	count=[0]
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://便宜机场.co
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://便宜机场.co
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[便宜机场co-8br0]	id=[1]	domain=[https://便宜机场.co]	count=[0]
+2024-12-31 16:40:51 airport.py [line:361] INFO: not exists free plan, domain: https://panel.moku.pro
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://a.yousu.cc
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://a.yousu.cc
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[ayousucc-wb2gu]	id=[1]	domain=[https://a.yousu.cc]	count=[0]
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://语.club
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://语.club
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[语club-ycj]	id=[1]	domain=[https://语.club]	count=[0]
+2024-12-31 16:40:51 airport.py [line:361] INFO: not exists free plan, domain: https://maple.icu
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[hvyJjQWZ]	id=[1]	domain=[http://8.129.23.122]	count=[4]
+2024-12-31 16:40:51 airport.py [line:364] INFO: found free plan, domain: https://qingyun.zybs.eu.org, plan: Plan(plan_id=1, package='month_price', renew=True, reset=False, trafficflow=50)
+2024-12-31 16:40:51 airport.py [line:361] INFO: not exists free plan, domain: https://www.eyujichang.com
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://b.yousu.cc
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://c.yousu.cc
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[wDqHF8kA]	id=[1]	domain=[https://sub.tiktijy.com]	count=[111]
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://b.yousu.cc
+2024-12-31 16:40:51 airport.py [line:276] INFO: achieved max retry when register, domain: https://fpacecloud.com
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[GbZYUBSc]	id=[1]	domain=[http://8.129.23.122]	count=[4]
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[byousucc-0zr8b]	id=[1]	domain=[https://b.yousu.cc]	count=[0]
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://c.yousu.cc
+2024-12-31 16:40:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://fpacecloud.com
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[cyousucc-xbvs]	id=[1]	domain=[https://c.yousu.cc]	count=[0]
+2024-12-31 16:40:51 workflow.py [line:138] INFO: finished fetch proxy: name=[fpacecloudcom-f6ok5]	id=[1]	domain=[https://fpacecloud.com]	count=[0]
+2024-12-31 16:40:51 airport.py [line:361] INFO: not exists free plan, domain: https://zhuiyun.top
+2024-12-31 16:40:52 airport.py [line:361] INFO: not exists free plan, domain: https://sulink.pro
+2024-12-31 16:40:52 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://xn--mesz9ptugxg.com/api/v1/client/subscribe?token=f74***4f2
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[zqjcorg-bncv]	id=[1]	domain=[https://zqjc.org]	count=[0]
+2024-12-31 16:40:52 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: http://vyysub.euquw.cn/api/v1/client/subscribe?token=a16***566
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[1vyunyuntop-um2]	id=[1]	domain=[https://1.vyunyun.top]	count=[0]
+2024-12-31 16:40:52 airport.py [line:361] INFO: not exists free plan, domain: https://a.kpyun.live
+2024-12-31 16:40:52 airport.py [line:394] INFO: [RegisterSuccess] register successed, domain: https://sq9xy6.cpminig.com
+2024-12-31 16:40:52 airport.py [line:361] INFO: not exists free plan, domain: https://fengwo.pro
+2024-12-31 16:40:52 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://ms9136.mangshe.one/api/v1/client/subscribe?token=b81***b43
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[wwwmangsheorg-w5b]	id=[1]	domain=[https://www.mangshe.org]	count=[0]
+2024-12-31 16:40:52 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://w02.qytl2web01.cc/api/v1/client/subscribe?token=ae6***1f9
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[w02qytl2web01cc-j07p]	id=[1]	domain=[https://w02.qytl2web01.cc]	count=[0]
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[hy-2com-aorqy]	id=[1]	domain=[https://hy-2.com]	count=[35]
+2024-12-31 16:40:52 airport.py [line:276] INFO: achieved max retry when register, domain: https://www.chaoyue.shop
+2024-12-31 16:40:52 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://www.chaoyue.shop
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[wwwchaoyueshop-idx]	id=[1]	domain=[https://www.chaoyue.shop]	count=[0]
+2024-12-31 16:40:52 airport.py [line:276] INFO: achieved max retry when register, domain: https://niercloud.com
+2024-12-31 16:40:52 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://niercloud.com
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[niercloudcom-bx1]	id=[1]	domain=[https://niercloud.com]	count=[0]
+2024-12-31 16:40:52 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://sub.sanqianlijinxiuheshan.us.kg/api/v1/client/subscribe?token=87e***2b5
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[sanqianlijinxiuheshanuskg-8n4]	id=[1]	domain=[https://sanqianlijinxiuheshan.us.kg]	count=[0]
+2024-12-31 16:40:52 airport.py [line:276] INFO: achieved max retry when register, domain: https://xx-ai.io
+2024-12-31 16:40:52 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://xx-ai.io
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[xx-aiio-0rq3j]	id=[1]	domain=[https://xx-ai.io]	count=[0]
+2024-12-31 16:40:52 airport.py [line:276] INFO: achieved max retry when register, domain: https://zouma.guanhua.xyz
+2024-12-31 16:40:52 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://zouma.guanhua.xyz
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[zoumaguanhuaxyz-x1da3]	id=[1]	domain=[https://zouma.guanhua.xyz]	count=[0]
+2024-12-31 16:40:52 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://mylink.moku.pro/api/v1/client/subscribe?token=a06***f1f
+2024-12-31 16:40:52 airport.py [line:276] INFO: achieved max retry when register, domain: https://pkq.xlm.plus
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[panelmokupro-tpx2]	id=[1]	domain=[https://panel.moku.pro]	count=[0]
+2024-12-31 16:40:52 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://pkq.xlm.plus
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[pkqxlmplus-fzdq2]	id=[1]	domain=[https://pkq.xlm.plus]	count=[0]
+2024-12-31 16:40:52 airport.py [line:361] INFO: not exists free plan, domain: https://console.veseai.com
+2024-12-31 16:40:52 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://s4.8878.tech/api/v1/client/subscribe?token=857***ea6
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[akpyunlive-zb4x]	id=[1]	domain=[https://a.kpyun.live]	count=[0]
+2024-12-31 16:40:52 airport.py [line:276] INFO: achieved max retry when register, domain: https://xb.jpop.vip
+2024-12-31 16:40:52 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://xb.jpop.vip
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[xbjpopvip-6vb]	id=[1]	domain=[https://xb.jpop.vip]	count=[0]
+2024-12-31 16:40:52 airport.py [line:276] INFO: achieved max retry when register, domain: https://b.xiaow.cc
+2024-12-31 16:40:52 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://b.xiaow.cc
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[bxiaowcc-otk7a]	id=[1]	domain=[https://b.xiaow.cc]	count=[0]
+2024-12-31 16:40:52 airport.py [line:276] INFO: achieved max retry when register, domain: https://panel.keleofficial.com
+2024-12-31 16:40:52 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://panel.keleofficial.com
+2024-12-31 16:40:52 workflow.py [line:138] INFO: finished fetch proxy: name=[panelkeleofficialcom-njco]	id=[1]	domain=[https://panel.keleofficial.com]	count=[0]
+2024-12-31 16:40:53 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://135841.xyz/api/v1/client/subscribe?token=8c4***82e
+2024-12-31 16:40:53 workflow.py [line:138] INFO: finished fetch proxy: name=[mapleicu-a0qb6]	id=[1]	domain=[https://maple.icu]	count=[0]
+2024-12-31 16:40:53 airport.py [line:364] INFO: found free plan, domain: https://www.kuaidog010.top, plan: Plan(plan_id=12, package='month_price', renew=True, reset=False, trafficflow=100)
+2024-12-31 16:40:53 workflow.py [line:138] INFO: finished fetch proxy: name=[abyssvpncom-vd7c]	id=[1]	domain=[https://abyssvpn.com]	count=[111]
+2024-12-31 16:40:53 airport.py [line:394] INFO: [RegisterSuccess] register successed, domain: https://qingyun.zybs.eu.org
+2024-12-31 16:40:53 airport.py [line:276] INFO: achieved max retry when register, domain: https://themeserver.cutecloudone.de
+2024-12-31 16:40:53 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://themeserver.cutecloudone.de
+2024-12-31 16:40:53 workflow.py [line:138] INFO: finished fetch proxy: name=[themeservercutecloudonede-rts]	id=[1]	domain=[https://themeserver.cutecloudone.de]	count=[0]
+2024-12-31 16:40:53 airport.py [line:361] INFO: not exists free plan, domain: https://qytvipaffcc04.qytvipaff.pro
+2024-12-31 16:40:53 airport.py [line:276] INFO: achieved max retry when register, domain: https://www.hj521.top
+2024-12-31 16:40:53 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://www.hj521.top
+2024-12-31 16:40:53 workflow.py [line:138] INFO: finished fetch proxy: name=[wwwhj521top-odhm]	id=[1]	domain=[https://www.hj521.top]	count=[0]
+2024-12-31 16:40:53 airport.py [line:276] INFO: achieved max retry when register, domain: https://xn--wtq35pfyd55o.co
+2024-12-31 16:40:53 airport.py [line:276] INFO: achieved max retry when register, domain: https://www.hj522.top
+2024-12-31 16:40:53 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://xn--wtq35pfyd55o.co
+2024-12-31 16:40:53 workflow.py [line:138] INFO: finished fetch proxy: name=[xn--wtq35pfyd55oco-mu4]	id=[1]	domain=[https://xn--wtq35pfyd55o.co]	count=[0]
+2024-12-31 16:40:53 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://www.hj522.top
+2024-12-31 16:40:53 workflow.py [line:138] INFO: finished fetch proxy: name=[wwwhj522top-k34f]	id=[1]	domain=[https://www.hj522.top]	count=[0]
+2024-12-31 16:40:53 airport.py [line:361] INFO: not exists free plan, domain: https://my.catfaka.com
+2024-12-31 16:40:53 airport.py [line:361] INFO: not exists free plan, domain: http://vyy.idsduf.com
+2024-12-31 16:40:53 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://user8769.eyudy.one/api/v1/client/subscribe?token=46c***64c
+2024-12-31 16:40:53 workflow.py [line:138] INFO: finished fetch proxy: name=[wwweyujichangcom-uq0]	id=[1]	domain=[https://www.eyujichang.com]	count=[0]
+2024-12-31 16:40:53 airport.py [line:364] INFO: found free plan, domain: https://www.kuaidog006.top, plan: Plan(plan_id=12, package='month_price', renew=True, reset=False, trafficflow=100)
+2024-12-31 16:40:53 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://qingyun.xn--kiv657b9vdeu1a.com/api/v1/client/subscribe?token=5bd***d87
+2024-12-31 16:40:53 workflow.py [line:138] INFO: finished fetch proxy: name=[qingyunzybseuorg-z9c]	id=[1]	domain=[https://qingyun.zybs.eu.org]	count=[0]
+2024-12-31 16:40:53 airport.py [line:361] INFO: not exists free plan, domain: https://dgg.idsduf.com
+2024-12-31 16:40:53 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://sbsqwzfgh.santoku.cn/api/v1/client/subscribe?token=e36***bad
+2024-12-31 16:40:53 workflow.py [line:138] INFO: finished fetch proxy: name=[zhuiyuntop-m5hgv]	id=[1]	domain=[https://zhuiyun.top]	count=[0]
+2024-12-31 16:40:53 workflow.py [line:138] INFO: finished fetch proxy: name=[sulinkpro-ygj60]	id=[1]	domain=[https://sulink.pro]	count=[28]
+2024-12-31 16:40:54 airport.py [line:394] INFO: [RegisterSuccess] register successed, domain: https://ch.louwangzhiyu.xyz
+2024-12-31 16:40:54 workflow.py [line:138] INFO: finished fetch proxy: name=[sq9xy6cpminigcom-wb2]	id=[1]	domain=[https://sq9xy6.cpminig.com]	count=[4]
+2024-12-31 16:40:54 workflow.py [line:138] INFO: finished fetch proxy: name=[vpnsudatechstore-5s9v]	id=[1]	domain=[https://vpn.sudatech.store]	count=[4]
+2024-12-31 16:40:54 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://fengwo.vfbhg.cn/api/v1/client/subscribe?token=14c***d05
+2024-12-31 16:40:54 workflow.py [line:138] INFO: finished fetch proxy: name=[fengwopro-2hxno]	id=[1]	domain=[https://fengwo.pro]	count=[0]
+2024-12-31 16:40:54 airport.py [line:276] INFO: achieved max retry when register, domain: http://qingyunti.cc
+2024-12-31 16:40:54 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: http://qingyunti.cc
+2024-12-31 16:40:54 workflow.py [line:138] INFO: finished fetch proxy: name=[qingyunticc-phe]	id=[1]	domain=[http://qingyunti.cc]	count=[0]
+2024-12-31 16:40:54 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://qytvipaffcc04.qytvipaff.pro/api/v1/client/subscribe?token=5c0***c87
+2024-12-31 16:40:54 workflow.py [line:138] INFO: finished fetch proxy: name=[qytvipaffcc04qytvipaffpro-w7x3]	id=[1]	domain=[https://qytvipaffcc04.qytvipaff.pro]	count=[0]
+2024-12-31 16:40:54 airport.py [line:276] INFO: achieved max retry when register, domain: https://xmfwww.cc
+2024-12-31 16:40:54 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://xmfwww.cc
+2024-12-31 16:40:54 workflow.py [line:138] INFO: finished fetch proxy: name=[xmfwwwcc-smt]	id=[1]	domain=[https://xmfwww.cc]	count=[0]
+2024-12-31 16:40:55 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://my.catfaka.com/api/v1/client/subscribe?token=1a2***015
+2024-12-31 16:40:55 workflow.py [line:138] INFO: finished fetch proxy: name=[mycatfakacom-7rhi]	id=[1]	domain=[https://my.catfaka.com]	count=[0]
+2024-12-31 16:40:55 workflow.py [line:138] INFO: finished fetch proxy: name=[consoleveseaicom-in06]	id=[1]	domain=[https://console.veseai.com]	count=[12]
+2024-12-31 16:40:55 airport.py [line:394] INFO: [RegisterSuccess] register successed, domain: https://www.kuaidog010.top
+2024-12-31 16:40:55 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: http://vyysub.euquw.cn/api/v1/client/subscribe?token=556***17b
+2024-12-31 16:40:55 workflow.py [line:138] INFO: finished fetch proxy: name=[vyyidsdufcom-dag]	id=[1]	domain=[http://vyy.idsduf.com]	count=[0]
+2024-12-31 16:40:55 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: http://ddg.zhunchuanpb.com/api/v1/client/subscribe?token=06a***665
+2024-12-31 16:40:55 workflow.py [line:138] INFO: finished fetch proxy: name=[dggidsdufcom-i4jvc]	id=[1]	domain=[https://dgg.idsduf.com]	count=[0]
+2024-12-31 16:40:55 airport.py [line:394] INFO: [RegisterSuccess] register successed, domain: https://www.kuaidog006.top
+2024-12-31 16:40:56 airport.py [line:552] ERROR: [ParseError] cannot found any proxies, subscribe: https://www.kuaidog010.top/api/v1/client/subscribe?token=e78***395
+2024-12-31 16:40:56 workflow.py [line:138] INFO: finished fetch proxy: name=[wwwkuaidog010top-uia]	id=[1]	domain=[https://www.kuaidog010.top]	count=[0]
+2024-12-31 16:40:56 workflow.py [line:138] INFO: finished fetch proxy: name=[chlouwangzhiyuxyz-28e]	id=[1]	domain=[https://ch.louwangzhiyu.xyz]	count=[60]
+2024-12-31 16:40:57 workflow.py [line:138] INFO: finished fetch proxy: name=[wwwkuaidog006top-bk9p0]	id=[1]	domain=[https://www.kuaidog006.top]	count=[13]
+2024-12-31 16:40:58 airport.py [line:276] INFO: achieved max retry when register, domain: https://www.smcow.com
+2024-12-31 16:40:58 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://www.smcow.com
+2024-12-31 16:40:58 workflow.py [line:138] INFO: finished fetch proxy: name=[wwwsmcowcom-c5y]	id=[1]	domain=[https://www.smcow.com]	count=[0]
+2024-12-31 16:40:58 mailtm.py [line:474] ERROR: [MailTMError] failed to create temporary email, domain: https://api.mail.tm
+2024-12-31 16:40:58 airport.py [line:469] ERROR: cannot create temporary email account, site: https://superbiu.com
+2024-12-31 16:40:58 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://superbiu.com
+2024-12-31 16:40:58 workflow.py [line:138] INFO: finished fetch proxy: name=[superbiucom-b1re9]	id=[1]	domain=[https://superbiu.com]	count=[0]
+2024-12-31 16:40:59 mailtm.py [line:474] ERROR: [MailTMError] failed to create temporary email, domain: https://api.mail.tm
+2024-12-31 16:40:59 airport.py [line:469] ERROR: cannot create temporary email account, site: https://iii1.caty.moe
+2024-12-31 16:40:59 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://iii1.caty.moe
+2024-12-31 16:40:59 workflow.py [line:138] INFO: finished fetch proxy: name=[iii1catymoe-6pg]	id=[1]	domain=[https://iii1.caty.moe]	count=[0]
+2024-12-31 16:42:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://db.shellnet.net
+2024-12-31 16:42:50 workflow.py [line:138] INFO: finished fetch proxy: name=[dbshellnetnet-uxgs]	id=[1]	domain=[https://db.shellnet.net]	count=[0]
+2024-12-31 16:42:50 airport.py [line:486] ERROR: receiving mail timeout, site: https://www.susucloud.net, address: https://www.moakt.com/zh, email: pzygx3@moakt.ws
+2024-12-31 16:42:50 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://www.susucloud.net
+2024-12-31 16:42:50 workflow.py [line:138] INFO: finished fetch proxy: name=[wwwsusucloudnet-i0sv]	id=[1]	domain=[https://www.susucloud.net]	count=[0]
+2024-12-31 16:42:50 airport.py [line:486] ERROR: receiving mail timeout, site: https://zxc.noseisei.com, address: https://www.moakt.com/zh, email: ckjqfhddz@tmpmail.org
+2024-12-31 16:42:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://abc.noseisei.com
+2024-12-31 16:42:51 workflow.py [line:138] INFO: finished fetch proxy: name=[abcnoseiseicom-nfis]	id=[1]	domain=[https://abc.noseisei.com]	count=[0]
+2024-12-31 16:42:51 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://zxc.noseisei.com
+2024-12-31 16:42:51 workflow.py [line:138] INFO: finished fetch proxy: name=[zxcnoseiseicom-8qe]	id=[1]	domain=[https://zxc.noseisei.com]	count=[0]
+2024-12-31 16:43:07 airport.py [line:486] ERROR: receiving mail timeout, site: https://xyz.noseisei.com, address: https://api.mail.tm, email: 9sng1woycevd@freesourcecodes.com
+2024-12-31 16:43:08 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://xyz.noseisei.com
+2024-12-31 16:43:08 workflow.py [line:138] INFO: finished fetch proxy: name=[xyznoseiseicom-l0fh4]	id=[1]	domain=[https://xyz.noseisei.com]	count=[0]
+2024-12-31 16:43:12 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: http://1run.vip
+2024-12-31 16:43:12 workflow.py [line:138] INFO: finished fetch proxy: name=[1runvip-sn7]	id=[1]	domain=[http://1run.vip]	count=[0]
+2024-12-31 16:43:13 airport.py [line:525] ERROR: [ParseError] cannot found any proxies because subscribe url is empty, domain: https://air.aptlive.org
+2024-12-31 16:43:13 workflow.py [line:138] INFO: finished fetch proxy: name=[airaptliveorg-jnzv]	id=[1]	domain=[https://air.aptlive.org]	count=[0]
+2024-12-31 16:43:13 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [executewrapper] finished, count: 96, cost: 143.22s
+2024-12-31 16:43:13 collect.py [line:359] INFO: found 443 proxies, save it to ['/home/runner/work/getAirport/getAirport/data/v2ray.txt']
