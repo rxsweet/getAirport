@@ -628,3 +628,35 @@
 2024-12-31 08:54:11 crawl.py [line:1743] INFO: [AirPortCollector] extract real base url finished, start to check it now
 2024-12-31 08:57:30 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [validate_domain] finished, count: 2351, cost: 198.72s
 2024-12-31 08:57:30 crawl.py [line:1755] INFO: [AirPortCollector] finished collect airport, availables: 201
+2024-12-31 09:49:27 collect.py [line:209] ERROR: cannot extract username and gist id due to invalid github gist link
+2024-12-31 09:49:27 collect.py [line:71] INFO: start checking whether existing subscriptions have expired
+2024-12-31 09:49:27 collect.py [line:113] INFO: load exists subscription finished, count: 0
+2024-12-31 09:49:28 crawl.py [line:1430] INFO: [TelegramCrawl] starting crawl from telegram, channel: jichang_list, pages: 20
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3940
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3920
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3900
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3880
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3860
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3840
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3820
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3800
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3780
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3760
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3740
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3720
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3700
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3680
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3660
+2024-12-31 09:49:28 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3640
+2024-12-31 09:49:29 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3620
+2024-12-31 09:49:29 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3600
+2024-12-31 09:49:29 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3580
+2024-12-31 09:49:29 crawl.py [line:1390] INFO: [AirPortCrawl] start collect airport, url: https://t.me/s/jichang_list?before=3560
+2024-12-31 09:49:29 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [extract_airport_site] finished, count: 20, cost: 1.52s
+2024-12-31 09:49:38 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [get_redirect_url] finished, count: 13, cost: 8.20s
+2024-12-31 09:49:43 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [run_crawl] finished, count: 9, cost: 0.09s
+2024-12-31 09:49:43 crawl.py [line:1731] INFO: [AirPortCollector] fetched 589 airport, start extracting real routing addresses
+2024-12-31 09:50:51 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [extract_backend_url] finished, count: 589, cost: 68.87s
+2024-12-31 09:50:51 crawl.py [line:1743] INFO: [AirPortCollector] extract real base url finished, start to check it now
+2024-12-31 09:51:36 utils.py [line:557] INFO: [Concurrent] multi-threaded execute [validate_domain] finished, count: 458, cost: 44.82s
+2024-12-31 09:51:36 crawl.py [line:1755] INFO: [AirPortCollector] finished collect airport, availables: 77
