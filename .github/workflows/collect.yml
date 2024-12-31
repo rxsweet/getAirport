@@ -49,7 +49,7 @@ jobs:
 
       - name: Collect
         run: |
-          run: python -u subscribe/collect.py --all --overwrite --skip
+          python -u subscribe/collect.py --all --overwrite --skip
           #cd ./clash
           #unzip 1.zip
           #unzip 2.zip
