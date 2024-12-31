@@ -211,7 +211,7 @@ def aggregate(args: argparse.Namespace) -> None:
 
         return utils.trim(words[0]), utils.trim(words[1])
 
-    #clash_bin, subconverter_bin = executable.which_bin()    #选择clash和subconverter程序
+    clash_bin, subconverter_bin = executable.which_bin()    #选择clash和subconverter程序
     display = not args.invisible
 
     subscribes_file = "subscribes.txt"
