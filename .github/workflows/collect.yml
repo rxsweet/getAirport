@@ -48,7 +48,9 @@ jobs:
 
 
       - name: Collect
-        run: python -u subscribe/collect.py --all --overwrite --skip
+        run: |
+          unzip 1.zip
+          unzip 2.zip
       - name: Commit Changes
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
