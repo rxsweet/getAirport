@@ -551,8 +551,7 @@ if __name__ == "__main__":
         "--refresh",
         dest="refresh",
         action="store_true",
-        #default=False,
-        default=True,
+        default=False,
         help="refresh and remove expired proxies with existing subscriptions",
     )#使用现有订阅刷新并删除过期的代理
 
@@ -561,8 +560,7 @@ if __name__ == "__main__":
         "--skip",
         dest="skip",
         action="store_true",
-        #default=False,
-        default=True,
+        default=False,
         help="skip usability checks",
     )#跳过可用性检查
 
@@ -590,8 +588,7 @@ if __name__ == "__main__":
         "--vitiate",
         dest="vitiate",
         action="store_true",
-        #default=False,
-        default=True,
+        default=False,
         help="ignoring default proxies filter rules",
     )#“忽略默认代理过滤规则”，
 
