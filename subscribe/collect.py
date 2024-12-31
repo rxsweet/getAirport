@@ -531,7 +531,8 @@ if __name__ == "__main__":
         "--overwrite",
         dest="overwrite",
         action="store_true",
-        default=False,
+        #default=False,
+        default=True,
         help="overwrite domains",
     )#覆盖域名
 
@@ -550,7 +551,8 @@ if __name__ == "__main__":
         "--refresh",
         dest="refresh",
         action="store_true",
-        default=False,
+        #default=False,
+        default=True,
         help="refresh and remove expired proxies with existing subscriptions",
     )#使用现有订阅刷新并删除过期的代理
 
@@ -569,7 +571,8 @@ if __name__ == "__main__":
         "--targets",
         nargs="+",
         choices=subconverter.CONVERT_TARGETS,
-        default=["clash", "v2ray", "singbox"],
+        #default=["clash", "v2ray", "singbox"],
+        default=["v2ray"],
         help=f"choose one or more generated profile type. default to clash, v2ray and singbox. supported: {subconverter.CONVERT_TARGETS}",
     )#f“选择一个或多个生成的配置文件类型。默认为 clash、v2ray 和 singbox。支持：{subconverter.CONVERT_TARGETS}”，
 
@@ -587,7 +590,8 @@ if __name__ == "__main__":
         "--vitiate",
         dest="vitiate",
         action="store_true",
-        default=False,
+        #default=False,
+        default=True,
         help="ignoring default proxies filter rules",
     )#“忽略默认代理过滤规则”，
 
