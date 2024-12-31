@@ -49,6 +49,7 @@ jobs:
 
       - name: Collect
         run: |
+          cd ./clash
           unzip 1.zip
           unzip 2.zip
       - name: Commit Changes
