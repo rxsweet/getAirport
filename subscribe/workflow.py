@@ -89,7 +89,7 @@ class TaskConfig:
 def execute(task_conf: TaskConfig) -> list:
     if not task_conf or not isinstance(task_conf, TaskConfig):
         return []
-
+    #获取机场对象
     obj = AirPort(
         name=task_conf.name,
         site=task_conf.domain,
@@ -136,7 +136,8 @@ def execute(task_conf: TaskConfig) -> list:
     )
 
     logger.info(
-        f"finished fetch proxy: name=[{task_conf.name}]\tid=[{task_conf.index}]\tdomain=[{obj.ref}]\tcount=[{len(proxies)}]"
+        #f"finished fetch proxy: name=[{task_conf.name}]\tid=[{task_conf.index}]\tdomain=[{obj.ref}]\tcount=[{len(proxies)}]"
+        f"finished fetch proxy: name=[{task_conf.name}]\tid=[{obj.username}]\tdomain=[{obj.ref}]\tcount=[{len(proxies)}]"
     )
 
     return proxies
