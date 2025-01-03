@@ -102,7 +102,8 @@ def execute(task_conf: TaskConfig) -> list:
         api_prefix=task_conf.api_prefix,
     )
 
-    logger.info(f"start fetch proxy: name=[{task_conf.name}]\tid=[{task_conf.index}]\tdomain=[{obj.ref}]")
+    #logger.info(f"start fetch proxy: name=[{task_conf.name}]\tid=[{task_conf.index}]\tdomain=[{obj.ref}]")
+    logger.info(f"start fetch proxy: name=[{task_conf.name}]\tid=[{obj.username}]\tdomain=[{obj.ref}]")
 
     # 套餐续期
     if task_conf.renew:
@@ -137,7 +138,7 @@ def execute(task_conf: TaskConfig) -> list:
 
     logger.info(
         #f"finished fetch proxy: name=[{task_conf.name}]\tid=[{task_conf.index}]\tdomain=[{obj.ref}]\tcount=[{len(proxies)}]"
-        f"finished fetch proxy: \tid=[{obj.username}]\tpass=[{obj.password}]\tdomain=[{obj.ref}]\tcount=[{len(proxies)}]"
+        f"finished fetch proxy: name=[{task_conf.name}]\tid=[{obj.username}]\tpass=[{obj.password}]\tdomain=[{obj.ref}]\tcount=[{len(proxies)}]"
     )
 
     return proxies
