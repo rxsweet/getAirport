@@ -44,8 +44,8 @@ def assign(
     display: bool = True,
     num_threads: int = 0,
     **kwargs,
-) -> list[TaskConfig]:
-    def load_exist(username: str, gist_id: str, access_token: str, filename: str) -> list[str]:
+) -> list[TaskConfig]:  #“->”函数的返回类型，https://geek-docs.com/python/python-ask-answer/263_python_what_does_mean_in_python_function_definitions.html
+    def load_exist(username: str, gist_id: str, access_token: str, filename: str) -> list[str]:#局部函数，https://blog.csdn.net/nokiaguy/article/details/106936174
         if not filename:
             return []
 
@@ -53,13 +53,13 @@ def assign(
 
         pattern = r"^https?:\/\/[^\s]+"
         local_file = os.path.join(DATA_BASE, filename)
-        if os.path.exists(local_file) and os.path.isfile(local_file):
+        if os.path.exists(local_file) and os.path.isfile(local_file):#判断文件路径和文件是否存在
             with open(local_file, "r", encoding="utf8") as f:
                 items = re.findall(pattern, str(f.read()), flags=re.M)
                 if items:
-                    subscriptions.update(items)
+                    subscriptions.update(items)#查找到的地址添加到订阅list
 
-        if username and gist_id and access_token:
+        if username and gist_id and access_token:#如果gist信息存在
             push_tool = push.PushToGist(token=access_token)
             url = push_tool.raw_url(push_conf={"username": username, "gistid": gist_id, "filename": filename})
 
@@ -68,10 +68,10 @@ def assign(
             if items:
                 subscriptions.update(items)
 
-        logger.info("start checking whether existing subscriptions have expired")
+        logger.info("start checking whether existing subscriptions have expired")#记录：开始检查现有订阅是否已过期
 
         # 过滤已过期订阅并返回
-        links = list(subscriptions)
+        links = list(subscriptions)#将set()属性的转成list
         results = utils.multi_thread_run(
             func=crawl.check_status,
             tasks=links,
@@ -81,7 +81,7 @@ def assign(
 
         return [links[i] for i in range(len(links)) if results[i][0] and not results[i][1]]
 
-    def parse_domains(content: str) -> dict:
+    def parse_domains(content: str) -> dict:#局部函数，https://blog.csdn.net/nokiaguy/article/details/106936174
         if not content or not isinstance(content, str):
             logger.warning("cannot found any domain due to content is empty or not string")
             return {}
@@ -102,7 +102,7 @@ def assign(
 
         return records
 
-    subscribes_file = utils.trim(kwargs.get("subscribes_file", ""))
+    subscribes_file = utils.trim(kwargs.get("subscribes_file", ""))#传进来的是"subscribes.txt"
     access_token = utils.trim(kwargs.get("access_token", ""))
     gist_id = utils.trim(kwargs.get("gist_id", ""))
     username = utils.trim(kwargs.get("username", ""))
@@ -110,7 +110,7 @@ def assign(
 
     # 加载已有订阅
     subscriptions = load_exist(username, gist_id, access_token, subscribes_file)
-    logger.info(f"load exists subscription finished, count: {len(subscriptions)}")
+    logger.info(f"load exists subscription finished, count: {len(subscriptions)}")#记录：加载存在订阅已完成，计数
 
     # 是否允许特殊协议
     special_protocols = AirPort.enable_special_protocols()
@@ -127,10 +127,10 @@ def assign(
 
     # 仅更新已有订阅
     if tasks and kwargs.get("refresh", False):
-        logger.info("skip registering new accounts, will use existing subscriptions for refreshing")
+        logger.info("skip registering new accounts, will use existing subscriptions for refreshing")#记录：跳过注册新帐户，将使用现有订阅进行刷新
         return tasks
 
-    domains, delimiter = {}, "@#@#"
+    domains, delimiter = {}, "@#@#" #初始化域名元素和分隔符
     domains_file = utils.trim(domains_file)
     if not domains_file:
         domains_file = "domains.txt"
@@ -139,7 +139,7 @@ def assign(
     fullpath = os.path.join(DATA_BASE, domains_file)
     if os.path.exists(fullpath) and os.path.isfile(fullpath):
         with open(fullpath, "r", encoding="UTF8") as f:
-            domains.update(parse_domains(content=str(f.read())))
+            domains.update(parse_domains(content=str(f.read())))#将已有的站点加入站点列表
 
     # 爬取新站点列表
     if not domains or overwrite:
@@ -200,9 +200,9 @@ def assign(
     return tasks
 
 
-def aggregate(args: argparse.Namespace) -> None:
+def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型，https://geek-docs.com/python/python-ask-answer/263_python_what_does_mean_in_python_function_definitions.html
 
-    def parse_gist_link(link: str) -> tuple[str, str]:
+    def parse_gist_link(link: str) -> tuple[str, str]:#局部函数，https://blog.csdn.net/nokiaguy/article/details/106936174
         # 提取 gist 用户名及 id
         words = utils.trim(link).split("/", maxsplit=1)
         if len(words) != 2:
@@ -223,10 +223,10 @@ def aggregate(args: argparse.Namespace) -> None:
     username, gist_id = parse_gist_link(args.gist)
 
     tasks = assign(
-        bin_name=subconverter_bin,
-        domains_file="domains.txt",
-        overwrite=args.overwrite,
-        pages=args.pages,
+        bin_name=subconverter_bin,#订阅转换程序名称
+        domains_file="domains.txt",#保存抓取到的domain文件名称
+        overwrite=args.overwrite,#覆盖域名，程序开始前设置里面有
+        pages=args.pages,#
         rigid=not args.easygoing,
         display=display,
         num_threads=args.num,
@@ -247,13 +247,14 @@ def aggregate(args: argparse.Namespace) -> None:
     old_subscriptions = set([t.sub for t in tasks if t.sub])
     
     logger.info(f"start generate subscribes information, tasks: {len(tasks)}")
-    generate_conf = os.path.join(PATH, "subconverter", "generate.ini")
+    generate_conf = os.path.join(PATH, "subconverter", "generate.ini")#订阅转换配置文件地址
     if os.path.exists(generate_conf) and os.path.isfile(generate_conf):
         os.remove(generate_conf)
-
+    #多线程开始注册机场
     results = utils.multi_thread_run(func=workflow.executewrapper, tasks=tasks, num_threads=args.num)
+    print('results = ' + str(len(results)))
     proxies = list(itertools.chain.from_iterable([x[1] for x in results if x]))
-
+    print('proxies = ' + str(len(proxies)))
     if len(proxies) == 0:
         logger.error("exit because cannot fetch any proxy node")
         sys.exit(0)
@@ -262,6 +263,7 @@ def aggregate(args: argparse.Namespace) -> None:
 
     if args.skip:
         nodes = clash.filter_proxies(proxies).get("proxies", [])
+        print('nodes = '' + str(len(nodes)))
     else:
         binpath = os.path.join(workspace, clash_bin)
         confif_file = "config.yaml"
@@ -605,4 +607,4 @@ if __name__ == "__main__":
         help="the url to the list of airports that you maintain yourself",
     )#“您自己维护的机场列表的网址”，
 
-    aggregate(args=parser.parse_args())
+    aggregate(args=parser.parse_args())#主程序开始，上面是加载配置
