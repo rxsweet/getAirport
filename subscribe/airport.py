@@ -449,9 +449,11 @@ class AirPort:
         self.api_prefix = rr.api_prefix or self.api_prefix
 
         if not rr.verify:
-            email = utils.random_chars(length=random.randint(6, 10), punctuation=False)
-            password = utils.random_chars(length=random.randint(8, 16), punctuation=True)
-
+            #自己重新编辑注册信息
+            #email = utils.random_chars(length=random.randint(6, 10), punctuation=False)
+            #password = utils.random_chars(length=random.randint(8, 16), punctuation=True)#最小8位，最多16位，punctuation=True是可用标点符号
+            email = utils.random_chars(length=random.randint(8, 16), punctuation=False)
+            password = email
             email_suffixs = rr.whitelist if rr.whitelist else EMAILS_DOMAINS
             email_domain = random.choice(email_suffixs)
             if not email_domain:
