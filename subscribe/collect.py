@@ -567,7 +567,8 @@ if __name__ == "__main__":
         "--skip",
         dest="skip",
         action="store_true",
-        default=False,
+        #default=False,
+        default=True,
         help="skip usability checks",
     )#跳过可用性检查
 
