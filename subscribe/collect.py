@@ -263,7 +263,7 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
 
     if args.skip:
         nodes = clash.filter_proxies(proxies).get("proxies", [])
-        print('nodes = '' + str(len(nodes)))
+        print('nodes = ' + str(len(nodes)))
     else:
         binpath = os.path.join(workspace, clash_bin)
         confif_file = "config.yaml"
@@ -447,7 +447,8 @@ if __name__ == "__main__":
         "--all",
         dest="all",
         action="store_true",
-        default=False,
+        #default=False,
+        default=True,
         help="generate full configuration for clash",
     )#生成完整配置的clash
 
