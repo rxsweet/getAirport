@@ -50,6 +50,7 @@ jobs:
       - name: Collect
         run: |
           python -u subscribe/collect.py
+          cp workflow.log log.txt
           #python -u subscribe/collect.py --all --overwrite --skip
           #cd ./clash
           #unzip 1.zip
