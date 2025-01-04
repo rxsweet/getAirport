@@ -137,7 +137,7 @@ def execute(task_conf: TaskConfig) -> list:
 
     logger.info(
         #f"finished fetch proxy: name=[{task_conf.name}]\tid=[{task_conf.index}]\tdomain=[{obj.ref}]\tcount=[{len(proxies)}]"
-        f"finished fetch proxy: name=[{task_conf.name}]\tid=[{obj.username}]\tdomain=[{obj.ref}]\tcount=[{len(proxies)}]"
+        f"finished fetch proxy: name=[{task_conf.name}]\tusername=[{obj.username}]\tdomain=[{obj.ref}]\tcount=[{len(proxies)}]"
     )
 
     return proxies
