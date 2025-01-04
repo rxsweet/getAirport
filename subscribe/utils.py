@@ -280,11 +280,11 @@ def isblank(text: str) -> bool:
     return not text or type(text) != str or not text.strip()
 
 
-def trim(text: str) -> str:
+def trim(text: str) -> str:#text: str 函数参数注释，参数text建议传入字符串（str）数据类型，https://zhidao.baidu.com/question/1674559082387673267.html
     if not text or type(text) != str:
         return ""
 
-    return text.strip()
+    return text.strip()#strip() 方法用于移除字符串头尾指定的字符（默认为空格或换行符）或字符序列，https://www.runoob.com/python/att-string-strip.html
 
 
 def load_dotenv(enviroment: str = ".env") -> None:
@@ -337,13 +337,14 @@ def mask(url: str) -> str:
         parse_result = urllib.parse.urlparse(url=url)
         if "token=" in parse_result.query:
             token = "".join(re.findall("token=([a-zA-Z0-9]+)", parse_result.query))
-            if len(token) >= 6:
-                token = token[:3] + "***" + token[-3:]
+            #去掉不显示token
+            #if len(token) >= 6:
+                #token = token[:3] + "***" + token[-3:]
             url = f"{parse_result.scheme}://{parse_result.netloc}{parse_result.path}?token={token}"
         else:
             path, token = parse_result.path.rsplit("/", maxsplit=1)
-            if len(token) >= 6:
-                token = token[:3] + "***" + token[-3:]
+            #if len(token) >= 6:
+                #token = token[:3] + "***" + token[-3:]
             url = f"{parse_result.scheme}://{parse_result.netloc}{path}/{token}"
     except:
         logger.error(f"invalid url: {url}")
