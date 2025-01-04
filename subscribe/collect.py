@@ -250,30 +250,19 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
     generate_conf = os.path.join(PATH, "subconverter", "generate.ini")#订阅转换配置文件地址
     if os.path.exists(generate_conf) and os.path.isfile(generate_conf):
         os.remove(generate_conf)
-    #多线程开始注册机场
+    #多线程开始注册机场，返回机场节点
     results = utils.multi_thread_run(func=workflow.executewrapper, tasks=tasks, num_threads=args.num)
+    #统计汇总节点
     proxies = list(itertools.chain.from_iterable([x[1] for x in results if x]))
-    """
-    file = open('r.txt', 'w', encoding= 'utf-8')
-    file.write(str(results))
-    file.close()
-    file = open('p.txt', 'w', encoding= 'utf-8')
-    file.write(str(proxies))
-    file.close()
-    """
+
     if len(proxies) == 0:
         logger.error("exit because cannot fetch any proxy node")
         sys.exit(0)
 
     nodes, workspace = [], os.path.join(PATH, "clash")
-
+    #是否测速节点，默认关闭
     if args.skip:
-        nodes = clash.filter_proxies(proxies).get("proxies", [])##########################################
-        """
-        file = open('nodes.txt', 'w', encoding= 'utf-8')
-        file.write(str(nodes))
-        file.close()
-        """
+        nodes = clash.filter_proxies(proxies).get("proxies", [])
     else:
         binpath = os.path.join(workspace, clash_bin)
         confif_file = "config.yaml"
@@ -325,13 +314,11 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
 
         sub = p.pop("sub", "")
         if sub:
-            subscriptions.add(sub)
+            subscriptions.add(sub)#可用的机场订阅
 
-    data = {"proxies": nodes}
+    data = {"proxies": nodes}#节点数据
     urls = list(subscriptions)
-    file = open('urls.txt', 'w', encoding= 'utf-8')
-    file.write(str(urls))
-    file.close()
+    
     source = "proxies.yaml"
 
     # 如果文件夹不存在则创建
@@ -344,7 +331,7 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
     with open(supplier, "w+", encoding="utf8") as f:
         yaml.add_representer(clash.QuotedStr, clash.quoted_scalar)
         yaml.dump(data, f, allow_unicode=True)
-
+    """
     if os.path.exists(generate_conf) and os.path.isfile(generate_conf):
         os.remove(generate_conf)
 
@@ -368,7 +355,7 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
             shutil.move(os.path.join(PATH, "subconverter", t[1]), filepath)
 
             records[t[1]] = filepath
-
+    #如果有要生成的文件就删除临时文件source = "./subconverter/proxies.yaml"
     if len(records) > 0:
         os.remove(supplier)
     else:
@@ -376,7 +363,10 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
         sys.exit(1)
 
     logger.info(f"found {len(nodes)} proxies, save it to {list(records.values())}")
-
+    """
+    #删除上面的保存订阅文件，试着自己转成自己想要的格式
+    logger.info(f"found {len(nodes)} proxies, save it to './subconverter/proxies.yaml'")
+    
     life, traffic = max(0, args.life), max(0, args.flow)
     if life > 0 or traffic > 0:
         # 过滤出新的订阅并检查剩余流量和过期时间是否满足要求
@@ -400,8 +390,10 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
         urls.extend(list(old_subscriptions))
 
         logger.info(f"filter subscriptions finished, total: {total}, found: {len(urls)}, discard: {discard}")
-
+    
+    #保存可用的机场订阅到subscribes.txt
     utils.write_file(filename=os.path.join(DATA_BASE, subscribes_file), lines=urls)
+    #保存可用机场网站到domains.txt
     domains = [utils.extract_domain(url=x, include_protocal=True) for x in urls]
 
     # 保存实际可使用的网站列表
