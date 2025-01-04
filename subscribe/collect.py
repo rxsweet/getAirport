@@ -377,7 +377,7 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
 
     logger.info(f"found {len(nodes)} proxies, save it to {list(records.values())}")
 
-    life, traffic = max(0.1, args.life), max(0.1, args.flow)
+    life, traffic = max(0, args.life), max(0, args.flow)
     if life > 0 or traffic > 0:
         # 过滤出新的订阅并检查剩余流量和过期时间是否满足要求
         new_subscriptions = [x for x in urls if x not in old_subscriptions]
@@ -591,7 +591,7 @@ if __name__ == "__main__":
         nargs="+",
         choices=subconverter.CONVERT_TARGETS,
         #default=["clash", "v2ray", "singbox"],
-        default=["v2ray"],
+        default=["clash", "v2ray"],
         help=f"choose one or more generated profile type. default to clash, v2ray and singbox. supported: {subconverter.CONVERT_TARGETS}",
     )#f“选择一个或多个生成的配置文件类型。默认为 clash、v2ray 和 singbox。支持：{subconverter.CONVERT_TARGETS}”，
 
