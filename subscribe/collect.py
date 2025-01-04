@@ -331,7 +331,7 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
     with open(supplier, "w+", encoding="utf8") as f:
         yaml.add_representer(clash.QuotedStr, clash.quoted_scalar)
         yaml.dump(data, f, allow_unicode=True)
-    """
+   
     if os.path.exists(generate_conf) and os.path.isfile(generate_conf):
         os.remove(generate_conf)
 
@@ -364,9 +364,10 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
 
     logger.info(f"found {len(nodes)} proxies, save it to {list(records.values())}")
     """
+    
     #删除上面的保存订阅文件，试着自己转成自己想要的格式
     logger.info(f"found {len(nodes)} proxies, save it to './subconverter/proxies.yaml'")
-    
+    """
     life, traffic = max(0, args.life), max(0, args.flow)
     if life > 0 or traffic > 0:
         # 过滤出新的订阅并检查剩余流量和过期时间是否满足要求
