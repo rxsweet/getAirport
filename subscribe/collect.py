@@ -252,9 +252,14 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
         os.remove(generate_conf)
     #多线程开始注册机场
     results = utils.multi_thread_run(func=workflow.executewrapper, tasks=tasks, num_threads=args.num)
-    print('results = ' + str(len(results)))
     proxies = list(itertools.chain.from_iterable([x[1] for x in results if x]))
-    print('proxies = ' + str(len(proxies)))
+    file = open('r.txt', 'w', encoding= 'utf-8')
+    file.write(str(results))
+    file.close()
+    file = open('p.txt', 'w', encoding= 'utf-8')
+    file.write(str(proxies))
+    file.close()
+
     if len(proxies) == 0:
         logger.error("exit because cannot fetch any proxy node")
         sys.exit(0)
@@ -262,8 +267,10 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
     nodes, workspace = [], os.path.join(PATH, "clash")
 
     if args.skip:
-        nodes = clash.filter_proxies(proxies).get("proxies", [])
-        print('nodes = ' + str(len(nodes)))
+        nodes = clash.filter_proxies(proxies).get("proxies", [])##########################################
+        file = open('nodes.txt', 'w', encoding= 'utf-8')
+        file.write(str(nodes))
+        file.close()
     else:
         binpath = os.path.join(workspace, clash_bin)
         confif_file = "config.yaml"
