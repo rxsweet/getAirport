@@ -1,1 +1,8 @@
-
+https://ch.cukug.website/api/v1/client/subscribe?token=88800beccb786d52b66237848cae0045
+https://dj.taipeicity.news/api/v1/client/subscribe?token=62b0da595a74d5a705e6924e386c727f
+https://console.veseai.com/api/v1/client/subscribe?token=5dfe0e43981d1b24dfb903409d18cfc8
+https://dy.sulian.life/api/v1/client/subscribe?token=a455c07cbe2f62440776c953e127740c
+https://hn1r5k7322.bitmusttw.com/api/v1/client/subscribe?token=5c2dfe82e6be1ebd8d61ec6694760e9f
+https://hn1r5k7322.bitmusttw.com/api/v1/client/subscribe?token=a3e23d3c28c826f343e418aad3fa175b
+https://dy.hy2.one/api/v1/client/subscribe?token=b2ca90288663960bd2f3c5722a64329c
+https://sub.tiktijy.com/api/v1/client/subscribe?token=9d285219f9606e42fcbc4c98cc2f29e9
