@@ -135,7 +135,7 @@ def execute(task_conf: TaskConfig) -> list:
         special_protocols=task_conf.special_protocols,
     )
     #自己添加的if，去掉不能用的信息
-    if obj.username == '':
+    if obj.username == '' or len(proxies) == 0:
         return []
     logger.info(
         #f"finished fetch proxy: name=[{task_conf.name}]\tid=[{task_conf.index}]\tdomain=[{obj.ref}]\tcount=[{len(proxies)}]"
