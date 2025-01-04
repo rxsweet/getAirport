@@ -524,7 +524,7 @@ class AirPort:
         special_protocols: bool = False,
     ) -> list:
         if "" == self.sub:
-            logger.error(f"[ParseError] cannot found any proxies because subscribe url is empty, domain: {self.ref}")
+            #logger.error(f"[ParseError] cannot found any proxies because subscribe url is empty, domain: {self.ref}")
             return []
 
         if self.sub.startswith(utils.FILEPATH_PROTOCAL):
@@ -551,7 +551,7 @@ class AirPort:
         if "" == text or (
             text.startswith("{") and text.endswith("}") and not re.search(r'"outbounds":', text, flags=re.I)
         ):
-            logger.error(f"[ParseError] cannot found any proxies, subscribe: {utils.mask(url=self.sub)}")
+            #logger.error(f"[ParseError] cannot found any proxies, subscribe: {utils.mask(url=self.sub)}")
             return []
 
         chatgpt = chatgpt if chatgpt and type(chatgpt) == dict else None
@@ -574,7 +574,7 @@ class AirPort:
             )
 
             if not nodes:
-                logger.info(f"cannot found any proxy, domain: {self.ref}")
+                #logger.info(f"cannot found any proxy, domain: {self.ref}")
                 return []
 
             proxies = []
