@@ -253,13 +253,14 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
     #多线程开始注册机场
     results = utils.multi_thread_run(func=workflow.executewrapper, tasks=tasks, num_threads=args.num)
     proxies = list(itertools.chain.from_iterable([x[1] for x in results if x]))
+    """
     file = open('r.txt', 'w', encoding= 'utf-8')
     file.write(str(results))
     file.close()
     file = open('p.txt', 'w', encoding= 'utf-8')
     file.write(str(proxies))
     file.close()
-
+    """
     if len(proxies) == 0:
         logger.error("exit because cannot fetch any proxy node")
         sys.exit(0)
@@ -268,9 +269,11 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
 
     if args.skip:
         nodes = clash.filter_proxies(proxies).get("proxies", [])##########################################
+        """
         file = open('nodes.txt', 'w', encoding= 'utf-8')
         file.write(str(nodes))
         file.close()
+        """
     else:
         binpath = os.path.join(workspace, clash_bin)
         confif_file = "config.yaml"
@@ -326,6 +329,9 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
 
     data = {"proxies": nodes}
     urls = list(subscriptions)
+    file = open('urls.txt', 'w', encoding= 'utf-8')
+    file.write(str(urls))
+    file.close()
     source = "proxies.yaml"
 
     # 如果文件夹不存在则创建
@@ -371,7 +377,7 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
 
     logger.info(f"found {len(nodes)} proxies, save it to {list(records.values())}")
 
-    life, traffic = max(0, args.life), max(0, args.flow)
+    life, traffic = max(0.1, args.life), max(0.1, args.flow)
     if life > 0 or traffic > 0:
         # 过滤出新的订阅并检查剩余流量和过期时间是否满足要求
         new_subscriptions = [x for x in urls if x not in old_subscriptions]
