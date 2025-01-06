@@ -8,8 +8,6 @@ on:
 env:
   # time zone
   TZ: Asia/Shanghai
-  # network proxy aggregate config
-  SUBSCRIBE_CONF: ${{ secrets.SUBSCRIBE_CONF }}
 
 jobs:
   process:
@@ -32,7 +30,7 @@ jobs:
         run: pip3 install -r requirements.txt
 
       - name: Process
-        run: python -u subscribe/process.py
+        run: python -u subscribe/process.py --overwrite
 
       - name: Commit Changes
         run: |
