@@ -511,7 +511,7 @@ def aggregate(args: argparse.Namespace) -> None:
     if not args or not isinstance(args, argparse.Namespace):
         return
 
-        #clash_bin, subconverter_bin = executable.which_bin()    #选择clash和subconverter程序
+    #clash_bin, subconverter_bin = executable.which_bin()    #选择clash和subconverter程序
     
     #没有clash和subconverter程序时,下面的安装起作用,注意下面的地址是否还可以访问
     #安装subconverter
@@ -823,7 +823,7 @@ if __name__ == "__main__":
         "--server",
         type=str,
         required=False,
-        default="https://raw.githubusercontent.com/rxsweet/getAirport/refs/heads/main/subscribe/config/config.default.json",
+        default="hello",
         help="remote config file",
     )#远程配置文件
 
