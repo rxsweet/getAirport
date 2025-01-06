@@ -1,0 +1,51 @@
+name: Process
+on:
+  #schedule:
+    #- cron: "05 03 * * *"
+    #- cron: "05 11 * * *"
+  workflow_dispatch:
+
+env:
+  # time zone
+  TZ: Asia/Shanghai
+
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Prepare
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+          architecture: "x64"
+          cache: "pip"
+
+      - name: Install
+        run: pip3 install -r requirements.txt
+
+      - name: Process
+        run: python -u subscribe/process.py --overwrite
+
+      - name: Commit Changes
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "Changes detected in the repository."
+            git config core.ignorecase false
+            git config --local user.email "actions@github.com"
+            git config --local user.name "GitHub Action"
+            git add ./
+            git commit -m "collect Airport at $(date '+%Y-%m-%d %H:%M:%S')"
+            git push
+          else
+            echo "No changes detected in the repository."
+          fi
+          
+      - name: Timestamp
+        run: date
