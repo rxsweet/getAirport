@@ -511,7 +511,28 @@ def aggregate(args: argparse.Namespace) -> None:
     if not args or not isinstance(args, argparse.Namespace):
         return
 
-    clash_bin, subconverter_bin = executable.which_bin()
+        #clash_bin, subconverter_bin = executable.which_bin()    #选择clash和subconverter程序
+    
+    #没有clash和subconverter程序时,下面的安装起作用,注意下面的地址是否还可以访问
+    #安装subconverter
+    SUB_PATH = os.path.join(PATH, "subconverter.tar.gz")
+    if not os.path.exists(SUB_PATH):
+        os.system(f"wget -O {SUB_PATH} https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz")
+    os.system(f"tar -zxvf {SUB_PATH} -C {PATH}")
+    subconverter_bin = 'subconverter'
+    #安装clash
+    CLASH_BASE = os.path.join(PATH, "clash")
+    CLASH_PATH = os.path.join(CLASH_BASE, "clash-linux-amd")
+    if not os.path.exists(CLASH_BASE):
+        os.makedirs(CLASH_BASE)
+        if not os.path.exists(CLASH_PATH):
+            os.system(F"wget -O {CLASH_PATH} https://raw.githubusercontent.com/wzdnzd/aggregator/refs/heads/main/clash/clash-linux-amd")
+        #安装Country.mmdb
+        Country_PATH = os.path.join(CLASH_BASE, "Country.mmdb")
+        if not os.path.exists(Country_PATH):
+            os.system(F"wget -O {Country_PATH} https://raw.githubusercontent.com/wzdnzd/aggregator/refs/heads/main/clash/Country.mmdb")
+    clash_bin = 'clash-linux-amd'
+    
     display = not args.invisible
 
     # parse config
@@ -804,7 +825,7 @@ if __name__ == "__main__":
         required=False,
         default="",
         help="remote config file",
-    )
+    )#远程配置文件
 
     parser.add_argument(
         "-t",
