@@ -212,12 +212,29 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
         return utils.trim(words[0]), utils.trim(words[1])
 
     #clash_bin, subconverter_bin = executable.which_bin()    #选择clash和subconverter程序
+    
+    #没有clash和subconverter程序时,下面的安装起作用,注意下面的地址是否还可以访问
+    #安装subconverter
+    SUB_PATH = os.path.join(PATH, "subconverter.tar.gz")
+    if not os.path.exists(SUB_PATH):
+        os.system(f"wget -O {SUB_PATH} https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz")
+    os.system(f"tar -zxvf {SUB_PATH} -C {PATH}")
+    subconverter_bin = 'subconverter'
+    #安装clash
+    CLASH_BASE = os.path.join(PATH, "clash")
+    CLASH_PATH = os.path.join(CLASH_BASE, "clash-linux-amd")
+    if not os.path.exists(CLASH_BASE):
+        os.makedirs(CLASH_BASE)
+        if not os.path.exists(CLASH_PATH):
+            os.system(F"wget -O {CLASH_PATH} https://raw.githubusercontent.com/wzdnzd/aggregator/refs/heads/main/clash/clash-linux-amd")
+        #安装Country.mmdb
+        Country_PATH = os.path.join(CLASH_BASE, "Country.mmdb")
+        if not os.path.exists(Country_PATH):
+            os.system(F"wget -O {Country_PATH} https://raw.githubusercontent.com/wzdnzd/aggregator/refs/heads/main/clash/Country.mmdb")
     clash_bin = 'clash-linux-amd'
-    subconverter_bin = 'subconverter-linux-amd'
-
 
     display = not args.invisible
-
+    
     subscribes_file = "subscribes.txt"
     access_token = utils.trim(args.key)
     username, gist_id = parse_gist_link(args.gist)
@@ -356,11 +373,11 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
 
             records[t[1]] = filepath
     #如果有要生成的文件就删除临时文件source = "./subconverter/proxies.yaml"
-    #if len(records) > 0:
-        #os.remove(supplier)
-    #else:
-        #logger.error(f"all targets convert failed, you can view the temporary file: {supplier}")
-        #sys.exit(1)
+    if len(records) > 0:
+        os.remove(supplier)
+    else:
+        logger.error(f"all targets convert failed, you can view the temporary file: {supplier}")
+        sys.exit(1)
 
     logger.info(f"found {len(nodes)} proxies, save it to {list(records.values())}")
     """
@@ -615,3 +632,8 @@ if __name__ == "__main__":
     )#“您自己维护的机场列表的网址”，
 
     aggregate(args=parser.parse_args())#主程序开始，上面是加载配置
+    
+    #自己添加保存日志文件
+    WORKFLOW_LOG = PATH + '/workflow.log'
+    LOG_TXT = PATH + '/log.txt'
+    os.system(f"cp {WORKFLOW_LOG} {LOG_TXT}")
