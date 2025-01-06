@@ -823,7 +823,7 @@ if __name__ == "__main__":
         "--server",
         type=str,
         required=False,
-        default="",
+        default="https://raw.githubusercontent.com/rxsweet/getAirport/refs/heads/main/subscribe/config/config.default.json",
         help="remote config file",
     )#远程配置文件
 
