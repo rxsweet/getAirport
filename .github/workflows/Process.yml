@@ -32,7 +32,7 @@ jobs:
         run: pip3 install -r requirements.txt
 
       - name: Process
-        run: python -u subscribe/process.py --overwrite
+        run: python -u subscribe/process.py
 
       - name: Commit Changes
         run: |
