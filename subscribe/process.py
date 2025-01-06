@@ -823,7 +823,7 @@ if __name__ == "__main__":
         "--server",
         type=str,
         required=False,
-        default="hello",
+        default="",
         help="remote config file",
     )#远程配置文件
 
