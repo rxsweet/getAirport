@@ -374,7 +374,8 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
             records[t[1]] = filepath
     #如果有要生成的文件就删除临时文件source = "./subconverter/proxies.yaml"
     if len(records) > 0:
-        os.remove(supplier)
+        #os.remove(supplier)
+        os.system(f"cp {supplier} ./proxies.yaml")
     else:
         logger.error(f"all targets convert failed, you can view the temporary file: {supplier}")
         sys.exit(1)
