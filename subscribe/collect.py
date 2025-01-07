@@ -217,7 +217,8 @@ def aggregate(args: argparse.Namespace) -> None:#“->”函数的返回类型�
     #安装subconverter
     SUB_PATH = os.path.join(PATH, "subconverter.tar.gz")
     if not os.path.exists(SUB_PATH):
-        os.system(f"wget -O {SUB_PATH} https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz")
+        #os.system(f"wget -O {SUB_PATH} https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz")
+        os.system(f"wget -O {SUB_PATH} https://github.com/lonelam/subconverter/releases/latest/download/subconverter_linux64.tar.gz")
     os.system(f"tar -zxvf {SUB_PATH} -C {PATH}")
     subconverter_bin = 'subconverter'
     #安装clash
