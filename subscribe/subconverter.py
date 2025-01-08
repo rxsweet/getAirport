@@ -88,7 +88,8 @@ def generate_conf(
         remove_rules = f"expand={str(not list_only).lower()}"
         lines = [name, path, url, remove_rules]
         lines.append(f"target={goal}")
-
+        #添加config配置文件
+        lines.append(f"config=https://raw.githubusercontent.com/rxsweet/all/main/githubTools/clashConfig.ini")
         if version is not None:
             lines.append(f"ver={version}")
 
