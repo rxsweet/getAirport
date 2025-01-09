@@ -10,8 +10,8 @@ import yaml
 import urllib.parse
 
 #文件位置
-URLLIST_PATH = './utils/airport/collectAirport/data/subscribes.txt'
-URL_YAML = './utils/airport/collectAirport/data/sub_info.yaml'
+URLLIST_PATH = './data/subscribes.txt'
+URL_YAML = './data/sub_info.yaml'
 
 """
 URL_YAML = '4.yaml'
@@ -178,11 +178,11 @@ def sub_check(url,bar):
             else:
                 #old_list.append(url)
                 pass
-        #try:
-            #start_check(url)
-        #except:
+        try:
+            start_check(url)
+        except:
             #old_list.append(url)
-            #pass
+            pass
         bar.update(1)
 
 #读取list文件,
