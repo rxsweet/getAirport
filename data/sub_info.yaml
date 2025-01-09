@@ -1,3 +1,9 @@
+- api: https://dy.hy2.one/api/v1/client/subscribe?token=8a7fb068dc95d29c00d9d88f3ccc9de4
+  free: 10.0GB
+  name: HY-2
+  nodes: '5'
+  time: '2025-01-09 17:07:22'
+  url: https://www.hy2.one
 - api: https://hn1r5k7322.bitmusttw.com/api/v1/client/subscribe?token=a701e4682ffd07bb1b7abc7f48da2d90
   free: 1.0GB
   name: Suda速达机场
@@ -10,45 +16,39 @@
   nodes: '4'
   time: '2025-01-09 21:07:34'
   url: https://veseai.com
-- api: https://dy.sulian.life/api/v1/client/subscribe?token=1596d9c20d99f2ef30b339089f3ae1e4
-  free: 30.0GB
-  name: SuLink速联网络
-  nodes: '2'
-  time: '2025-01-09 16:14:39'
-  url: https://zhuye2.sulink.one
 - api: http://hk.kjdjakskl.cyou/api/v1/client/subscribe?token=4541d9f6f8faed6ef5f9c219ef76f247
   free: 1.0GB
   name: 血液加速器
   nodes: '12'
   time: '2025-01-10 16:07:24'
   url: https://xueyejiasu.com
-- api: https://aicaicai.dashuai.us/api/v1/client/subscribe?token=6a6f498bc216d181b4296c5411dddccb
-  free: 2.0GB
-  name: 大师专线
-  nodes: '23'
-  time: '2025-01-09 20:07:25'
-  url: https://xc1.shishi1.buzz
-- api: https://aa.needss.link/api/v1/client/subscribe?token=ae43b86ba34fd42dece814451e043710
-  free: 10.0GB
-  name: needss云
-  nodes: '43'
-  time: '2025-01-09 22:07:24'
-  url: https://6.needss.one
-- api: https://cainiao224.top/api/v1/client/subscribe?token=17fca866d44261824e6562ceb629bc15
-  free: 10.0GB
-  name: 菜鸟机场
-  nodes: '36'
-  time: '2025-01-09 18:07:36'
-  url: https://cainiao216.top
 - api: https://ch.cukug.website/api/v1/client/subscribe?token=c789689b1effb689c457fe4d4a623442
   free: 1000.0GB
   name: 漏网之鱼
   nodes: '19'
   time: '2025-02-09 16:07:35'
   url: ''
-- api: https://dy.hy2.one/api/v1/client/subscribe?token=8a7fb068dc95d29c00d9d88f3ccc9de4
+- api: https://dy.sulian.life/api/v1/client/subscribe?token=1596d9c20d99f2ef30b339089f3ae1e4
+  free: 30.0GB
+  name: SuLink速联网络
+  nodes: '2'
+  time: '2025-01-09 16:14:39'
+  url: https://zhuye2.sulink.one
+- api: https://aa.needss.link/api/v1/client/subscribe?token=ae43b86ba34fd42dece814451e043710
   free: 10.0GB
-  name: HY-2
-  nodes: '5'
-  time: '2025-01-09 17:07:22'
-  url: https://www.hy2.one
+  name: needss云
+  nodes: '43'
+  time: '2025-01-09 22:07:24'
+  url: https://6.needss.one
+- api: https://aicaicai.dashuai.us/api/v1/client/subscribe?token=6a6f498bc216d181b4296c5411dddccb
+  free: 2.0GB
+  name: 大师专线
+  nodes: '23'
+  time: '2025-01-09 20:07:25'
+  url: https://xc1.shishi1.buzz
+- api: https://cainiao224.top/api/v1/client/subscribe?token=17fca866d44261824e6562ceb629bc15
+  free: 10.0GB
+  name: 菜鸟机场
+  nodes: '36'
+  time: '2025-01-09 18:07:36'
+  url: https://cainiao216.top

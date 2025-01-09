@@ -1,9 +1,9 @@
+https://dy.hy2.one/api/v1/client/subscribe?token=8a7fb068dc95d29c00d9d88f3ccc9de4
 https://hn1r5k7322.bitmusttw.com/api/v1/client/subscribe?token=a701e4682ffd07bb1b7abc7f48da2d90
 https://console.veseai.com/api/v1/client/subscribe?token=0540dda355a83d787d2aad5f3933d062
-https://dy.sulian.life/api/v1/client/subscribe?token=1596d9c20d99f2ef30b339089f3ae1e4
 http://hk.kjdjakskl.cyou/api/v1/client/subscribe?token=4541d9f6f8faed6ef5f9c219ef76f247
-https://aicaicai.dashuai.us/api/v1/client/subscribe?token=6a6f498bc216d181b4296c5411dddccb
-https://aa.needss.link/api/v1/client/subscribe?token=ae43b86ba34fd42dece814451e043710
-https://cainiao224.top/api/v1/client/subscribe?token=17fca866d44261824e6562ceb629bc15
 https://ch.cukug.website/api/v1/client/subscribe?token=c789689b1effb689c457fe4d4a623442
-https://dy.hy2.one/api/v1/client/subscribe?token=8a7fb068dc95d29c00d9d88f3ccc9de4
+https://dy.sulian.life/api/v1/client/subscribe?token=1596d9c20d99f2ef30b339089f3ae1e4
+https://aa.needss.link/api/v1/client/subscribe?token=ae43b86ba34fd42dece814451e043710
+https://aicaicai.dashuai.us/api/v1/client/subscribe?token=6a6f498bc216d181b4296c5411dddccb
+https://cainiao224.top/api/v1/client/subscribe?token=17fca866d44261824e6562ceb629bc15
