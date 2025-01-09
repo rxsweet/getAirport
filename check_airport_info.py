@@ -3,15 +3,15 @@ import time
 import requests
 import threading
 from tqdm import tqdm
-from retry import retry
+#from retry import retry
 from datetime import datetime
 import math
 import yaml
 import urllib.parse
 
 #文件位置
-URLLIST_PATH = './data/subscribes.txt'
-URL_YAML = './data/sub_info.yaml'
+URLLIST_PATH = './utils/airport/collectAirport/data/subscribes.txt'
+URL_YAML = './utils/airport/collectAirport/data/sub_info.yaml'
 
 """
 URL_YAML = '4.yaml'
@@ -92,7 +92,7 @@ def list_rm(urlList):#列表去重
 def sub_check(url,bar):
     headers = {'User-Agent': 'ClashforWindows/0.18.1'}
     with thread_max_num:
-        @retry(tries=3)
+        #@retry(tries=3)
         def start_check(url):
             res=requests.get(url,headers=headers,timeout=5)#设置5秒超时防止卡死
             if res.status_code == 200:
@@ -178,11 +178,11 @@ def sub_check(url,bar):
             else:
                 #old_list.append(url)
                 pass
-        try:
-            start_check(url)
-        except:
+        #try:
+            #start_check(url)
+        #except:
             #old_list.append(url)
-            pass
+            #pass
         bar.update(1)
 
 #读取list文件,
@@ -263,3 +263,4 @@ if __name__=='__main__':
     #save yaml
     with open(URL_YAML, 'w',encoding="utf-8") as f:
         data = yaml.dump(new_yaml, f,allow_unicode=True)
+
