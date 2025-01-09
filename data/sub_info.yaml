@@ -1,54 +1,48 @@
-- api: https://dy.hy2.one/api/v1/client/subscribe?token=8a7fb068dc95d29c00d9d88f3ccc9de4
-  free: 10.0GB
-  name: HY-2
-  nodes: '5'
-  time: '2025-01-09 17:07:22'
-  url: https://www.hy2.one
-- api: https://hn1r5k7322.bitmusttw.com/api/v1/client/subscribe?token=a701e4682ffd07bb1b7abc7f48da2d90
+- api: https://dj.taipeicity.news/api/v1/client/subscribe?token=38e178fcee70fef21012cbdcdd5d3afd
+  free: 100.0GB
+  name: 星爸爸
+  nodes: '3'
+  time: '2025-02-08 09:19:14'
+  url: https://user.stardad.lol
+- api: https://www.kuaidog010.top/api/v1/client/subscribe?token=7cc5e81d879a9a8eb35f72f23b7686c0
+  free: 100.0GB
+  name: 快狗云
+  nodes: '14'
+  time: '2025-02-09 09:17:37'
+  url: https://www.kuaidog010.top
+- api: http://hk.kjdjakskl.cyou/api/v1/client/subscribe?token=0f06bffae8a245832130c5e0f9609492
+  free: 1024.0MB
+  name: 血液加速器
+  nodes: '12'
+  time: '2025-01-10 09:17:19'
+  url: https://xueyejiasu.com
+- api: https://ch.vfkum.website/api/v1/client/subscribe?token=920d2ab729defff5076cd16189627e26
+  free: 1000.0GB
+  name: 漏网之鱼
+  nodes: '19'
+  time: '2025-02-09 09:17:32'
+  url: ''
+- api: http://8.129.23.122/api/v1/client/subscribe?token=21fbb701db72023e0e22dd09a7cf73db
   free: 1.0GB
   name: Suda速达机场
   nodes: '4'
   time: 永久有效
   url: https://airplane.sudatech.store
-- api: https://console.veseai.com/api/v1/client/subscribe?token=0540dda355a83d787d2aad5f3933d062
-  free: 5.0GB
-  name: 畅连
-  nodes: '4'
-  time: '2025-01-09 21:07:34'
-  url: https://veseai.com
-- api: http://hk.kjdjakskl.cyou/api/v1/client/subscribe?token=4541d9f6f8faed6ef5f9c219ef76f247
-  free: 1.0GB
-  name: 血液加速器
-  nodes: '12'
-  time: '2025-01-10 16:07:24'
-  url: https://xueyejiasu.com
-- api: https://ch.cukug.website/api/v1/client/subscribe?token=c789689b1effb689c457fe4d4a623442
+- api: https://a.aikllc.tech/api/v1/client/subscribe?token=80608a4701b46ac62e6f90e514832f61
+  free: 331.38GB
+  name: AiK-X
+  nodes: '7'
+  time: '2025-01-26 09:18:01'
+  url: https://aikx.me
+- api: https://bpjc.lol/api/bpjclol?token=9f6dd782465637021424e232ba9154ef
   free: 1000.0GB
-  name: 漏网之鱼
-  nodes: '19'
-  time: '2025-02-09 16:07:35'
-  url: ''
-- api: https://dy.sulian.life/api/v1/client/subscribe?token=1596d9c20d99f2ef30b339089f3ae1e4
-  free: 30.0GB
-  name: SuLink速联网络
-  nodes: '2'
-  time: '2025-01-09 16:14:39'
-  url: https://zhuye2.sulink.one
-- api: https://aa.needss.link/api/v1/client/subscribe?token=ae43b86ba34fd42dece814451e043710
-  free: 10.0GB
-  name: needss云
-  nodes: '43'
-  time: '2025-01-09 22:07:24'
-  url: https://6.needss.one
-- api: https://aicaicai.dashuai.us/api/v1/client/subscribe?token=6a6f498bc216d181b4296c5411dddccb
-  free: 2.0GB
-  name: 大师专线
-  nodes: '23'
-  time: '2025-01-09 20:07:25'
-  url: https://xc1.shishi1.buzz
-- api: https://cainiao224.top/api/v1/client/subscribe?token=17fca866d44261824e6562ceb629bc15
-  free: 10.0GB
-  name: 菜鸟机场
-  nodes: '36'
-  time: '2025-01-09 18:07:36'
-  url: https://cainiao216.top
+  name: 白嫖机场
+  nodes: '12'
+  time: '2025-02-09 09:17:42'
+  url: https://bpjc.lol
+- api: http://gbtgurl01.org/api/v1/client/subscribe?token=fa1b33c87e8d519fe59c890308577d3b
+  free: 1017.3GB
+  name: 果宝特攻
+  nodes: '13'
+  time: '2025-01-21 16:28:42'
+  url: https://guobaotegong.me
