@@ -50,6 +50,7 @@ jobs:
       - name: Collect
         run: |
           python -u subscribe/collect.py
+          python -u check_airport_info.py
           cp workflow.log log.txt
           #python -u subscribe/collect.py --all --overwrite --skip
           #cd ./clash
