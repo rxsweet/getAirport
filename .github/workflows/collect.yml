@@ -50,12 +50,11 @@ jobs:
       - name: Collect
         run: |
           python -u subscribe/collect.py
-          python -u check_airport_info.py
           cp workflow.log log.txt
           #python -u subscribe/collect.py --all --overwrite --skip
-          #cd ./clash
-          #unzip 1.zip
-          #unzip 2.zip
+      - name: check airport info
+        run: |
+          python -u check_airport_info.py
       - name: Commit Changes
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
