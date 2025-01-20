@@ -1,8 +1,7 @@
-https://dj.taipeicity.news/api/v1/client/subscribe?token=38e178fcee70fef21012cbdcdd5d3afd
-https://www.kuaidog010.top/api/v1/client/subscribe?token=7cc5e81d879a9a8eb35f72f23b7686c0
-http://hk.kjdjakskl.cyou/api/v1/client/subscribe?token=0f06bffae8a245832130c5e0f9609492
-https://ch.vfkum.website/api/v1/client/subscribe?token=920d2ab729defff5076cd16189627e26
-http://8.129.23.122/api/v1/client/subscribe?token=21fbb701db72023e0e22dd09a7cf73db
-https://a.aikllc.tech/api/v1/client/subscribe?token=80608a4701b46ac62e6f90e514832f61
 https://bpjc.lol/api/bpjclol?token=9f6dd782465637021424e232ba9154ef
+https://dj.taipeicity.news/api/v1/client/subscribe?token=38e178fcee70fef21012cbdcdd5d3afd
+https://a.aikllc.tech/api/v1/client/subscribe?token=80608a4701b46ac62e6f90e514832f61
+https://www.kuaidog010.top/api/v1/client/subscribe?token=7cc5e81d879a9a8eb35f72f23b7686c0
 http://gbtgurl01.org/api/v1/client/subscribe?token=fa1b33c87e8d519fe59c890308577d3b
+http://8.129.23.122/api/v1/client/subscribe?token=21fbb701db72023e0e22dd09a7cf73db
+https://ch.vfkum.website/api/v1/client/subscribe?token=920d2ab729defff5076cd16189627e26
